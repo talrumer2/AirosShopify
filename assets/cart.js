@@ -345,46 +345,79 @@ class CartItems extends HTMLElement {
       }
 
       goalIcons.forEach((goalIcon, index) => {
-        const cartTotalDiff = cartTotalCents - thresholds[index];
-        const icon = goalIcon.querySelector("img");
-        const goalNumber = goalIcon.dataset.index;
+        try {
+          const cartTotalDiff = cartTotalCents - thresholds[index];
+          const icon = goalIcon.querySelector("img");
+          const goalNumber = goalIcon.dataset.index;
 
-        if (icon) {
-          if (cartTotalDiff < 0) {
-            const regularIconUrl = goalIcon.dataset.regularIcon;
-            if (regularIconUrl) {
-              icon.src = regularIconUrl;
-              icon.srcset = `${regularIconUrl} 50w`;
-              icon.alt = `Goal ${goalNumber}`;
-            }
-          } else {
-            const reachedIconUrl = goalIcon.dataset.reachedIcon;
-            if (reachedIconUrl) {
-              icon.src = reachedIconUrl;
-              icon.srcset = `${reachedIconUrl} 50w`;
-              icon.alt = `Goal ${goalNumber} Reached`;
+          if (icon) {
+            if (cartTotalDiff < 0) {
+              const regularIconUrl = goalIcon.dataset.regularIcon;
+              if (regularIconUrl && regularIconUrl !== "undefined") {
+                icon.src = regularIconUrl;
+                icon.srcset = `${regularIconUrl} 50w`;
+                icon.alt = `Goal ${goalNumber}`;
+              }
+            } else {
+              const reachedIconUrl = goalIcon.dataset.reachedIcon;
+              if (reachedIconUrl && reachedIconUrl !== "undefined") {
+                icon.src = reachedIconUrl;
+                icon.srcset = `${reachedIconUrl} 50w`;
+                icon.alt = `Goal ${goalNumber} Reached`;
+              } else {
+                // Fallback to regular icon if reached icon is not available
+                const regularIconUrl = goalIcon.dataset.regularIcon;
+                if (regularIconUrl && regularIconUrl !== "undefined") {
+                  icon.src = regularIconUrl;
+                  icon.srcset = `${regularIconUrl} 50w`;
+                  icon.alt = `Goal ${goalNumber}`;
+                }
+              }
             }
           }
+        } catch (error) {
+          console.warn("Error updating goal icon:", error, goalIcon);
         }
       });
 
-      goalMessageElement.style.display = "block";
       if (nextGoalIndex === -1) {
         const message = postGoalMessages[postGoalMessages.length - 1];
-        goalMessageElement.innerHTML = message;
+        if (message && message.trim() !== "") {
+          goalMessageElement.style.display = "block";
+          goalMessageElement.innerHTML = message;
+        } else {
+          goalMessageElement.style.display = "none";
+        }
       } else {
-        const remainingForGoal = thresholds[nextGoalIndex] - cartTotalCents;
-        const remainingAmount = remainingForGoal / 100;
-        const remainingAmountFormatted = this.formatCurrency(
-          currencyFormat,
-          remainingAmount
-        );
-        const preGoalMessageTemplate = preGoalMessages[nextGoalIndex];
-        const message = preGoalMessageTemplate.replace(
-          "[remaining_for_goal]",
-          remainingAmountFormatted
-        );
-        goalMessageElement.innerHTML = message;
+        try {
+          const remainingForGoal = thresholds[nextGoalIndex] - cartTotalCents;
+          const remainingAmount = remainingForGoal / 100;
+          const remainingAmountFormatted = this.formatCurrency(
+            currencyFormat,
+            remainingAmount
+          );
+          const preGoalMessageTemplate = preGoalMessages[nextGoalIndex];
+
+          if (preGoalMessageTemplate && preGoalMessageTemplate.trim() !== "") {
+            const message = preGoalMessageTemplate.replace(
+              "[remaining_for_goal]",
+              remainingAmountFormatted
+            );
+            goalMessageElement.style.display = "block";
+            goalMessageElement.innerHTML = message;
+          } else {
+            // Empty message is intentional - hide the element
+            goalMessageElement.style.display = "none";
+          }
+        } catch (error) {
+          console.error("Error updating goal message:", error, {
+            nextGoalIndex,
+            cartTotalCents,
+            thresholds,
+            preGoalMessages,
+          });
+          goalMessageElement.style.display = "none";
+        }
       }
     }
   }

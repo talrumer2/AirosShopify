@@ -126,13 +126,8 @@
               {% assign threshold = thresholds[index] | plus: 0 %}
               {% assign cart_total_diff = cart_total_cents | minus: threshold %}
               
-              {% comment %} Calculate RTL position for Hebrew {% endcomment %}
-              {% if localization.language.iso_code == 'he' %}
-                {% assign rtl_goal_position = 100 | minus: goal_position %}
-                {% assign position_style = 'left: ' | append: rtl_goal_position | append: '%;' %}
-              {% else %}
-                {% assign position_style = 'left: ' | append: goal_position | append: '%;' %}
-              {% endif %}
+              {% comment %} Calculate position - keep data unchanged for JS, only modify visual position {% endcomment %}
+              {% assign position_style = 'left: ' | append: goal_position | append: '%;' %}
               
               {% assign current_index = index | plus: 1 %}
               {% assign icon_key = 'goal_' | append: current_index | append: '_icon' %}
@@ -241,10 +236,22 @@
           pointer-events: none;
         }
         
+        /* RTL support for Hebrew */
+        {% if localization.language.iso_code == 'he' %}
+        .goal-icons-container {
+          direction: rtl;
+          transform: scaleX(-1);
+        }
+        
+        .goal-icon {
+          transform: scaleX(-1) translateX(50%);
+        }
+        {% endif %}
+        
         .goal-icon {
           position: absolute;
           top: 0;
-          transform: translateX(-50%);
+          {% unless localization.language.iso_code == 'he' %}transform: translateX(-50%);{% endunless %}
           text-align: center;
           margin: 0;
           padding: 0;
