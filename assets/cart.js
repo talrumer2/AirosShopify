@@ -110,6 +110,7 @@ class CartItems extends HTMLElement {
             responseText,
             "text/html"
           );
+
           const selectors = ["cart-drawer-items", ".cart-drawer__footer"];
           for (const selector of selectors) {
             const targetElement = document.querySelector(selector);
@@ -131,6 +132,7 @@ class CartItems extends HTMLElement {
             "text/html"
           );
           const sourceQty = html.querySelector("cart-items");
+
           this.innerHTML = sourceQty.innerHTML;
         })
         .catch((e) => {
@@ -327,7 +329,6 @@ class CartItems extends HTMLElement {
       progressBar.style.width = "0%";
     } else {
       progressWrapper.style.display = "block";
-      const previousWidth = parseFloat(progressBar.style.width) || 0;
       progressBar.style.width = `${progressPercentage}%`;
 
       if (progressPercentage >= 100) {
@@ -349,6 +350,16 @@ class CartItems extends HTMLElement {
           const cartTotalDiff = cartTotalCents - thresholds[index];
           const icon = goalIcon.querySelector("img");
           const goalNumber = goalIcon.dataset.index;
+          const checkElement = goalIcon.querySelector(".goal-check");
+
+          // Update check mark visibility
+          if (checkElement) {
+            if (cartTotalDiff >= 0) {
+              checkElement.classList.add("reached");
+            } else {
+              checkElement.classList.remove("reached");
+            }
+          }
 
           if (icon) {
             if (cartTotalDiff < 0) {

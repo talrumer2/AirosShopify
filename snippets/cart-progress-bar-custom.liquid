@@ -161,6 +161,14 @@
                 {% if image_icon_reached != blank %}data-reached-icon="{{ image_icon_reached | image_url: width: 50 }}"{% endif %}
                 data-index="{{ current_index }}"
               >
+                <!-- Green check element for reached goals -->
+                <div class="goal-check {% if cart_total_diff >= 0 %}reached{% endif %}">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#22c55e"/>
+                    <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                
                 {% if image_icon != blank or image_icon_reached != blank %}
                   {% if cart_total_diff < 0 %}
                     {% if image_icon != blank %}
@@ -260,6 +268,25 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+        
+        .goal-check {
+          position: absolute;
+          top: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          z-index: 10;
+        }
+        
+        .goal-check.reached {
+          opacity: 1;
+          transform: translateX(-50%) scale(1);
+        }
+        
+        .goal-check svg {
+          filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
         }
         
         .goal-icon img {

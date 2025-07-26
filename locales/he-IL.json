@@ -3358,7 +3358,7 @@
       "update": "לעדכן",
       "login": {
         "title": "יש לך חשבון?",
-        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">התחבר</a> כדי לבצע תשלום מהיר יותר."
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">התחברי</a> כדי לבצע תשלום מהיר יותר."
       }
     },
     "footer": {
