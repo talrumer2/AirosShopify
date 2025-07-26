@@ -233,8 +233,8 @@
         "total_due_today_label": "סכום לתשלום היום",
         "total_due_later_label": "סכום לתשלום מאוחר יותר",
         "partial_total_label": "סך הכל",
-        "free_total_label": "לשחרר",
-        "free_shipping_total_label": "לשחרר",
+        "free_total_label": "חינם",
+        "free_shipping_total_label": "חינם",
         "paid_label": "בתשלום",
         "payment_due_label": "תשלום עד מועד התשלום",
         "vat_label_html": "כולל %{amount} במסים",
@@ -1123,8 +1123,8 @@
         "name_on_card_placeholder": "שם על הכרטיס",
         "card_nickname_label": "כינוי (אופציונלי)",
         "card_expired": "פג תוקף",
-        "card_expiry_label": "תאריך תפוגה (חודש / שני)",
-        "card_expiry_placeholder": "תאריך תפוגה (חודש / שני)",
+        "card_expiry_label": "תאריך תפוגה (חודש / שנה)",
+        "card_expiry_placeholder": "תאריך תפוגה (חודש / שנה)",
         "credit_card_start_month": "חודש התחלה",
         "credit_card_start_year": "שנת התחלה",
         "delete_customer_mandate_modal_title": "להסיר את כרטיס התשלום הזה?",
@@ -1134,14 +1134,14 @@
         "card_verification_value_label": "קוד אבטחה",
         "card_verification_value_placeholder": "קוד אבטחה",
         "card_verification_confirm": "למטרות אימות, הזיני את קוד האבטחה של הכרטיס שלך.",
-        "card_expiry_date_explanation": "תאריך תפוגת הכרטיס בפורמט: חודש, חודש, שני, שני",
+        "card_expiry_date_explanation": "תאריך תפוגת הכרטיס בפורמט: חודש, חודש, שנה, שנה",
         "card_expiration_month_label": "חודש תפוגה",
         "card_expiration_year_label": "שנת תפוגה",
         "card_verification_value_explanation": "קוד אבטחה בן 3 ספרות נמצא בדרך כלל בגב הכרטיס. לכרטיסי אמריקן אקספרס יש קוד בן 4 ספרות הממוקם בחזית.",
         "card_verification_value_explanation_amex": "קוד אבטחה בן 4 ספרות בחזית הכרטיס",
         "card_verification_value_explanation_other": "קוד אבטחה בן 3 ספרות בגב הכרטיס שלך",
-        "card_start_label": "תאריך הנפקה (חודש / שני)",
-        "card_start_placeholder": "תאריך הנפקה (חודש / שני)",
+        "card_start_label": "תאריך הנפקה (חודש / שנה)",
+        "card_start_placeholder": "תאריך הנפקה (חודש / שנה)",
         "card_issue_number_label": "מספר גיליון",
         "card_issue_number_placeholder": "מספר גיליון",
         "card_change_label": "לשנות",
@@ -1151,8 +1151,8 @@
         "masked_digits_label": "•••• %{אחרון_ספרות}",
         "payment_method_saved": "אמצעי התשלום נשמר",
         "card_vaulted_company_location": "הכרטיס נשמר עבור מיקום זה",
-        "expiry_long": "(פג תוקף %{חודש}/%{שני})",
-        "expiry_short": "(תפוגה %{חודש}/%{שני})",
+        "expiry_long": "(פג תוקף %{חודש}/%{שנה})",
+        "expiry_short": "(תפוגה %{חודש}/%{שנה})",
         "saved_by_payment_method": "נשמר על ידי %{payment_method}",
         "pay_with_payment_method": "שלם באמצעות %{payment_method}",
         "different_credit_card_label": "השתמשי בכרטיס אשראי אחר",
@@ -1532,7 +1532,7 @@
             "other": "חודשים"
           },
           "year": {
-            "one": "שני",
+            "one": "שנה",
             "other": "%{count} שנים"
           }
         },
@@ -1933,7 +1933,7 @@
         "split_shipping_option_custom": "מנהג"
       },
       "delivery_options": {
-        "free_total_label": "לשחרר",
+        "free_total_label": "חינם",
         "ship": "ספינה",
         "ship_to_address": "לשלוח לכתובת",
         "shipping_address": "כתובת למשלוח",
@@ -1961,7 +1961,7 @@
         "have_an_account_label": "יש לך חשבון?",
         "sign_in_link_label": "התחברות",
         "sign_out_link_label": "התנתק",
-        "save_my_information_label": "שמרי פרטים זה לפעם הבאה",
+        "save_my_information_label": "שמרי פרטים לפעם הבאה",
         "invalid_address": "הכתובת שנבחרה אינה חוקית. %{update_address_link} או בחרי כתובת אחרת.",
         "incomplete_address": "הכתובת שנבחרה אינה שלמה. %{update_address_link} או בחרי כתובת אחרת.",
         "rollup_label": "חשבון",
@@ -2461,7 +2461,7 @@
         "address_map_marker": "כתובת למשלוח",
         "method": "שיטת משלוח",
         "summary": "משלוח",
-        "free": "לשחרר",
+        "free": "חינם",
         "free_shipping_discount": "משלוח חינם",
         "one_time": "משלוח חד פעמי",
         "subscription": "משלוח מנוי"
@@ -3542,7 +3542,7 @@
       "message_label": "הודעה (אופציונלי)",
       "message": "הודעה",
       "max_characters": "מספר תווים מקסימלי של {{ max_chars }}",
-      "send_on": "שני-חודש-יום",
+      "send_on": "שנה-חודש-יום",
       "send_on_label": "לשלוח (אופציונלי)"
     }
   }
