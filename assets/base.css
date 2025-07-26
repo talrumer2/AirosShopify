@@ -3825,6 +3825,23 @@ html[lang="he"] {
   .drawer__header, .footer__content-top, .footer__content-bottom {
     direction: rtl;
   }
+  #CartDrawer .drawer__inner {
+    
+    direction: rtl;
+
+    #CartDrawer-ColumnProduct {
+      text-align: right;
+    }
+
+    #CartDrawer-ColumnTotal {
+      text-align: left;
+    }
+  }
+
+  .cart-progress-bar-container {
+    direction: rtl;
+  }
+  
   text-align: right;
 }
 
@@ -3847,3 +3864,4 @@ html[lang="he"] .product__info-wrapper {
   direction: rtl;
   text-align: right;
 } */
+

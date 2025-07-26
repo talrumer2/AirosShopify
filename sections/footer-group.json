@@ -31,7 +31,7 @@
         "image_8mc9xT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/AirosLogoSvgWhite.svg",
+            "image": "shopify://shop_images/airos_logo.svg",
             "image_width": 100,
             "alignment": "center"
           }

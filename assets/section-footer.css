@@ -242,6 +242,7 @@
 
   .footer-block__newsletter {
     flex-direction: column;
+    align-items: start;
   }
 }
 

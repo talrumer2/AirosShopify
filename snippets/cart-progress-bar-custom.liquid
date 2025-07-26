@@ -118,13 +118,21 @@
           </div>
         </div>
   
-        {% if settings.show_progress_bar_icons %}
+                {% if settings.show_progress_bar_icons %}
           <div class="goal-icons-container">
             {% assign goal_positions_size = goal_positions.size | minus: 1 %}
             {% for index in (0..goal_positions_size) %}
               {% assign goal_position = goal_positions[index] %}
               {% assign threshold = thresholds[index] | plus: 0 %}
               {% assign cart_total_diff = cart_total_cents | minus: threshold %}
+              
+              {% comment %} Calculate RTL position for Hebrew {% endcomment %}
+              {% if localization.language.iso_code == 'he' %}
+                {% assign rtl_goal_position = 100 | minus: goal_position %}
+                {% assign position_style = 'left: ' | append: rtl_goal_position | append: '%;' %}
+              {% else %}
+                {% assign position_style = 'left: ' | append: goal_position | append: '%;' %}
+              {% endif %}
               
               {% assign current_index = index | plus: 1 %}
               {% assign icon_key = 'goal_' | append: current_index | append: '_icon' %}
@@ -152,8 +160,8 @@
                   {% assign preload_images = preload_images | append: image_icon_reached_url %}
                 {% endunless %}
               {% endif %}
-  
-              <div class="goal-icon" style="left: {{ goal_position }}%;"
+
+              <div class="goal-icon" style="{{ position_style }}"
                 {% if image_icon != blank %}data-regular-icon="{{ image_icon | image_url: width: 50 }}"{% endif %}
                 {% if image_icon_reached != blank %}data-reached-icon="{{ image_icon_reached | image_url: width: 50 }}"{% endif %}
                 data-index="{{ current_index }}"
@@ -193,6 +201,11 @@
     </div>
   
     <style>
+
+      #cart-progress-wrapper {
+        padding-left: 20px;
+      }
+
       #cart-progress-bar {
         display: block;
         height: 10px;
