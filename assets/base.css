@@ -3827,6 +3827,8 @@ html[lang="he"] {
   }
   #CartDrawer .drawer__inner {
     
+    width: 500px;
+    max-width: 50vw !important;
     direction: rtl;
 
     #CartDrawer-ColumnProduct {

@@ -148,9 +148,9 @@
     "goal_3_description": "תיק אוברסייס מתנה",
     "goal_3_icon": "shopify://shop_images/bag_1.png",
     "goal_3_icon_reached": "shopify://shop_images/bag_2.png",
-    "cart_progress_bar_color": "#008cee",
-    "cart_progress_bar_full_color": "#008cee",
-    "cart_progress_bar_background_color": "#adadad",
+    "cart_progress_bar_color": "#000000",
+    "cart_progress_bar_full_color": "#000000",
+    "cart_progress_bar_background_color": "#D9D9D9",
     "cart_progress_bar_text_color": "#191919",
     "sections": {
       "main-password-header": {

@@ -208,10 +208,8 @@
 
       #cart-progress-bar {
         display: block;
-        height: 10px;
+        height: 4px;
         background-color: var(--progress-bar-color, {{ settings.cart_progress_bar_color }});
-        border-radius: 10px;
-        border: 1px solid var(--progress-bar-border-color, {{ settings.cart_progress_bar_color }});
         box-sizing: border-box;
       }
       
@@ -229,12 +227,10 @@
       .cart-progress-bar-container {
         width: 100%;
         background-color: {{ settings.cart_progress_bar_background_color }};
-        border-radius: 10px;
         margin: 10px auto;
-        padding: 1px;
         overflow: hidden;
         position: relative;
-        height: 12px;
+        height: 4px;
       }
     
       {% if settings.show_progress_bar_icons %}
