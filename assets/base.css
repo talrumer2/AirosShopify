@@ -3822,9 +3822,8 @@ form-embed [data-testid="teaser-container"] {
 /* RTL 🔥 */
 
 html[lang="he"] {
-  .drawer__header {
-    
-  direction: rtl;
+  .drawer__header, .footer__content {
+    direction: rtl;
   }
   text-align: right;
 }
