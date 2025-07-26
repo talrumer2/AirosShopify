@@ -3822,7 +3822,7 @@ form-embed [data-testid="teaser-container"] {
 /* RTL 🔥 */
 
 html[lang="he"] {
-  .drawer__header, .footer__content {
+  .drawer__header, .footer__content-top, .footer__content-bottom {
     direction: rtl;
   }
   text-align: right;
