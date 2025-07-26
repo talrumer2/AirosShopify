@@ -50,17 +50,17 @@
         "title": "אזל מהמלאי",
         "items_unavailable_notice": "חלק מהפריטים אינם זמינים עוד.",
         "product_column_header": "מוצרים",
-        "quantity_column_header": "כַּמוּת",
-        "price_column_header": "מְחִיר",
-        "status_column_header": "סטָטוּס",
+        "quantity_column_header": "כמות",
+        "price_column_header": "מחיר",
+        "status_column_header": "סטטוס",
         "removed_from_cart_notice": "הוסר מהעגלה",
-        "sold_out_label": "הַכַּרטִיסִים אָזלוּ",
-        "reduced_label": "מוּפחָת",
+        "sold_out_label": "הכרטיסים אזלו",
+        "reduced_label": "מופחת",
         "reduced_with_quantity_label": "נותרו רק %{quantity_available}",
         "remove_from_cart_button_label": "הסר מהעגלה",
-        "continue_shopping_button_label": "לְהַמשִׁיך",
+        "continue_shopping_button_label": "להמשיך",
         "go_back_to_cart_button_label": "חזור לעגלת הקניות שלי",
-        "remove": "לְהַסִיר",
+        "remove": "להסיר",
         "return_to_store_label": "חזור לחנות",
         "continue_cta_label": "המשך בקופה",
         "item_label": {
@@ -144,16 +144,16 @@
           "other": "הצג את כל %{count} הפריטים"
         },
         "more_items_modal": {
-          "search_item": "לְחַפֵּשׂ",
+          "search_item": "לחפש",
           "clear_search": "נקה חיפוש",
           "empty_results": "לא נמצאו תוצאות עבור \"%{searchText}\". בדוק את האיות או השתמש במילה או בביטוי אחר.",
           "number_items_shown": "%{shownNumber} מתוך %{totalNumber} פריטים"
         },
         "order_name_label": "הזמנה %{name}",
         "shopping_cart_label": "עגלת קניות",
-        "discount_title": "דִיסקוֹנט",
+        "discount_title": "דיסקונט",
         "discount_title_stacking": {
-          "one": "דִיסקוֹנט",
+          "one": "דיסקונט",
           "other": "הנחות"
         },
         "discount_order_stacking": {
@@ -179,7 +179,7 @@
         "return_shipping_fee_label": "משלוח חזרה",
         "free_shipping_discount_label": "משלוח חינם",
         "applied_free_shipping_discount_label": "יישומי",
-        "apply_discount_button_label": "לִפְנוֹת",
+        "apply_discount_button_label": "לפנות",
         "applied_discount_message": "%{amount} הנחה על מחיר ההזמנה הכולל",
         "discount_has_been_applied": "ההנחה יושמה",
         "discount_has_been_removed": "ההנחה הוסרה",
@@ -198,7 +198,7 @@
           "one": "סכום ביניים · %{count} פריט",
           "other": "סכום ביניים · %{count} פריטים"
         },
-        "shipping_label": "מִשׁלוֹחַ",
+        "shipping_label": "משלוח",
         "pickup_label": "איסוף בחנות",
         "no_pickup_location": "אין נקודות איסוף זמינות.",
         "pickup_unavailable_banner_title": {
@@ -209,7 +209,7 @@
           "ship_to_address": "לשלוח לכתובת",
           "ship_to_address_instead_html": "%{link} במקום זאת"
         },
-        "tip_label": "עֵצָה",
+        "tip_label": "עצה",
         "calculating_shipping": "מחשב...",
         "calculating": "מחשב...",
         "shipping_default_value": "מחושב בשלב הבא",
@@ -225,16 +225,16 @@
         "price_after_discount_aria_text": "מחיר מוזל",
         "discount_code_aria_text": "קוד הנחה",
         "total_savings": "סך החיסכון",
-        "total_label": "סַך הַכֹּל",
+        "total_label": "סך הכל",
         "total_due_label": "סכום לתשלום",
         "total_price_label": "מחיר כולל",
         "total_outstanding_label": "סכום לתשלום",
-        "deposit_label": "לְהַפְקִיד",
+        "deposit_label": "להפקיד",
         "total_due_today_label": "סכום לתשלום היום",
         "total_due_later_label": "סכום לתשלום מאוחר יותר",
-        "partial_total_label": "סַך הַכֹּל",
-        "free_total_label": "לְשַׁחְרֵר",
-        "free_shipping_total_label": "לְשַׁחְרֵר",
+        "partial_total_label": "סך הכל",
+        "free_total_label": "לשחרר",
+        "free_shipping_total_label": "לשחרר",
         "paid_label": "בתשלום",
         "payment_due_label": "תשלום עד מועד התשלום",
         "vat_label_html": "כולל %{amount} במסים",
@@ -243,21 +243,21 @@
         "discount_savings_notice": "לאחר הנחות של %{discount_amount}",
         "gift_card_savings_notice": "לאחר %{gift_card_amount} בכרטיסי מתנה",
         "cost_table_title": "סיכום עלויות",
-        "cost_table_item_column_header": "פָּרִיט",
-        "cost_table_value_column_header": "עֵרֶך",
-        "description_label": "תֵאוּר",
-        "price_label": "מְחִיר",
+        "cost_table_item_column_header": "פריט",
+        "cost_table_value_column_header": "ערך",
+        "description_label": "תאור",
+        "price_label": "מחיר",
         "price_per_item": {
           "accessibility_label": "%{price} לפריט",
           "label": "%{מחיר}/ליחידה"
         },
-        "quantity_label": "כַּמוּת",
-        "product_change_label": "לְשַׁנוֹת",
+        "quantity_label": "כמות",
+        "product_change_label": "לשנות",
         "product_image_label": "תמונת מוצר",
-        "product_image_quantity_label": "כַּמוּת",
+        "product_image_quantity_label": "כמות",
         "scroll_order_summary": "גלול לפריטים נוספים",
-        "expand_order_summary_short": "לְהַצִיג",
-        "collapse_order_summary_short": "לְהַסתִיר",
+        "expand_order_summary_short": "להציג",
+        "collapse_order_summary_short": "להסתיר",
         "expand_order_summary": "הצג סיכום הזמנה",
         "collapse_order_summary": "הסתר את סיכום ההזמנה",
         "original_price": "מחיר מקורי",
@@ -266,7 +266,7 @@
         "order_total_updated_label": "סכום מעודכן",
         "total_already_paid_label": "בתשלום",
         "unit_price": {
-          "accessible_separator": "לְכָל",
+          "accessible_separator": "לכל",
           "per_item": {
             "single": "%{price} כל אחד",
             "one": "%{price} לכל %{count} פריט",
@@ -396,7 +396,7 @@
         "credit_card_label": "כרטיס אשראי",
         "bank_deposit_label": "הפקדה בבנק",
         "cash_on_delivery_label": "תשלום במזומן במשלוח (COD)",
-        "money_order_label": "הַמחָאַת כֶּסֶף",
+        "money_order_label": "המחאת כסף",
         "debit_card_label": "כרטיס חיוב",
         "deferred_payment_label": "בחר אמצעי תשלום מאוחר יותר",
         "fixed_payment_label": "התשלום שלך יהיה עד התאריך {{dueDate}} .",
@@ -438,7 +438,7 @@
         "customer_information_title": "פרטי הזמנה",
         "contact_information_title": "פרטי קשר",
         "billing_address_title": "כתובת לחיוב",
-        "company_location_title": "מִקוּם",
+        "company_location_title": "מקום",
         "shipping_address_title": "כתובת למשלוח",
         "shipping_address_map_title": "מפת גוגל המציגה את נקודת המדויקת של כתובת המשלוח: %{address}",
         "payment_method_title": "אמצעי תשלום",
@@ -448,7 +448,7 @@
         "estimated_arrival": "תאריך אספקה משוער: ",
         "estimated_delivery": "אומדן אספקה נוכחי: ",
         "re-order": "הזמינו מחדש את אותם פריטים",
-        "confirmed": "מְאוּשָׁר",
+        "confirmed": "מאושר",
         "gift_card_confirmation_by_text": "אם לא קיבלתם, שלחו שוב את ההודעה או צרו איתנו קשר.",
         "gift_card_confirmation_by_email": "אם לא קיבלתם, שלחו שוב את המייל או צרו איתנו קשר.",
         "gift_card_title": "כרטיסי מתנה",
@@ -523,14 +523,14 @@
           "fulfilled_table_title": "פריטים במשלוח זה",
           "unfulfilled_table_title": "פריטים מתכוננים למשלוח",
           "product_image_label": "תמונת מוצר",
-          "description_label": "תֵאוּר",
-          "quantity_label": "כַּמוּת"
+          "description_label": "תאור",
+          "quantity_label": "כמות"
         },
         "order_updates_description_missing": "אינך מקבל עדכוני משלוח.",
         "order_updates_subscribe_to_email_notifications": "קבל עדכוני משלוח במייל",
         "order_updates_subscribe_to_email_or_phone_notifications": "קבל עדכוני משלוח בדוא\"ל או בהודעת טקסט",
         "order_updates_subscribe_to_phone_notifications": "קבל עדכוני משלוח באמצעות הודעת טקסט",
-        "order_updates_submit_subscription": "לְהַגִישׁ",
+        "order_updates_submit_subscription": "להגיש",
         "track_shipment": "מעקב אחר משלוח",
         "other_options": "אפשרויות אחרות",
         "delivery_information_label": "פרטי משלוח:",
@@ -550,7 +550,7 @@
         "view_business_customer_account": "הצג חשבון",
         "breadcrumbs_submitted": "הוגש",
         "breadcrumbs_in_review": "בסקירה",
-        "breadcrumbs_confirmed": "מְאוּשָׁר",
+        "breadcrumbs_confirmed": "מאושר",
         "missing_shipping_address_banner": {
           "title": "להזמנה אין כתובת למשלוח",
           "text_html": "%{contact_us} כדי להוסיף את הכתובת שלך",
@@ -564,7 +564,7 @@
         "order_updates_subscribe_to_email_notifications_failed": "איננו יכולים לשמור כתובת דוא\"ל זו לצורך עדכונים. אנא נסה שוב או השתמש בכתובת דוא\"ל אחרת.",
         "order_updates_subscribe_to_email_notifications_email_already_exists": "האימייל שהזנת כבר קיים.",
         "subscriptions_management": {
-          "title": "מִנוּי",
+          "title": "מנוי",
           "description": "המשך לחשבונך כדי לצפות ולנהל את המנויים שלך.",
           "button_label": "ניהול המנוי שלך"
         },
@@ -603,7 +603,7 @@
         "verify_shop_account_cta": "אימות החשבון שלך",
         "verify_shop_account_confirmation": "פרטי התשלום נשמרו",
         "announcement": {
-          "close": "לִסְגוֹר"
+          "close": "לסגור"
         },
         "thank_you_confirmed_order_with_draft_payment": "נעדכן אותך אם נזדקק למידע נוסף או כאשר הזמנתך תאושר.",
         "thank_you_confirmed_order_with_draft_pick_up": "נעדכן אותך אם נזדקק למידע נוסף או כאשר הזמנתך תאושר.",
@@ -707,10 +707,10 @@
         "attempted_delivery": "ניסיון משלוח"
       },
       "vaulted": {
-        "change_button": "לְשַׁנוֹת"
+        "change_button": "לשנות"
       },
       "review": {
-        "title": "סְקִירָה",
+        "title": "סקירה",
         "review_title": "השלם את ההזמנה שלך",
         "blocks": {
           "pick_up_in_store_shipping_method_html": "איסוף בחנות · %{location_name}",
@@ -727,9 +727,9 @@
           "change_shipping_address_link_label": "שינוי כתובת משלוח",
           "change_shipping_method_link_label": "שנה את שיטת המשלוח",
           "change_payment_method_link_label": "שנה אמצעי תשלום",
-          "contact_method_title": "מַגָע",
+          "contact_method_title": "מגע",
           "shipping_address_title": "לשלוח אל",
-          "change_link_label": "לְשַׁנוֹת",
+          "change_link_label": "לשנות",
           "shipping_method_title": "שיטת משלוח",
           "payment_method_title": "אמצעי תשלום",
           "purchase_order_number_title": "מספר הזמנת רכש",
@@ -738,8 +738,8 @@
         "block_title": "בדוק את המידע שלך",
         "item_header": {
           "change_value": "שינוי ערך",
-          "section": "סָעִיף",
-          "value": "עֵרֶך"
+          "section": "סעיף",
+          "value": "ערך"
         },
         "review_and_confirm_title": "סקירה ואישור",
         "checkout_as_guest": "צ'ק אאוט כאורח",
@@ -820,13 +820,13 @@
         "scrim": {
           "continue_purchase_in_window": "המשך את הרכישה שלך בחלון {{walletName}}",
           "and_return_to_checkout": "ולחזור לקופה",
-          "cancel": "לְבַטֵל"
+          "cancel": "לבטל"
         },
         "return_to_store": "חזור לחנות",
         "return_to_checkout": "חזרה לקופה",
         "redirect_hint": "תתבקש להתחבר באמצעות {{walletName}} .",
         "logged_in": "מחובר ל {{email}}",
-        "shipping_line_label": "מִשׁלוֹחַ",
+        "shipping_line_label": "משלוח",
         "payment_in_progress_title": "התשלום בתהליך",
         "payment_in_progress_body": "התשלום שלך מעובד. ההזמנה שלך תושלם בקרוב.",
         "call_to_action": "שלם באמצעות {{walletName}}",
@@ -863,7 +863,7 @@
         "foot": "רגל",
         "yard": "יארד",
         "square_foot": "רגל²",
-        "item": "פָּרִיט"
+        "item": "פריט"
       },
       "memberships": {
         "delivery_promise_unfulfillable": "הכתובת אינה נתמכת עבור החברות הנוכחית."
@@ -905,7 +905,7 @@
           "UnhandledViolations": "פרטי הזמנה"
         },
         "all_violations_content": "התקשרו אלינו או שלחו לנו {{emailLink}} כדי לעדכן מידע זה ולהשלים את הזמנתכם:",
-        "all_violations_email_link": "אֶלֶקטרוֹנִי",
+        "all_violations_email_link": "אלקטרוני",
         "editable_shipping_address_violations_message_title": "הוסף מידע זה כדי להשלים את ההזמנה שלך:",
         "editable_shipping_address_violations_message_footer": "כדי לעדכן לצמיתות את הכתובת עבור מיקום זה, {{emailLink}} .",
         "editable_shipping_address_violations_email_link": "צרו קשר",
@@ -925,7 +925,7 @@
       },
       "marketplaces": {
         "legal_notice": {
-          "legal_text": "סְקִירָה",
+          "legal_text": "סקירה",
           "link_label": "תנאים והגבלות {{partnerDisplayName}}"
         }
       },
@@ -933,7 +933,7 @@
         "title": "שאלות? צ'אט איתנו"
       },
       "local_pickup": {
-        "location_address_search_label": "כְּתוֹבֶת",
+        "location_address_search_label": "כתובת",
         "location_information": {
           "one": "יש חנות %{count} עם מלאי קרוב ל-%{address}",
           "other": "יש %{count} חנויות עם מלאי קרוב ל-%{address}"
@@ -943,8 +943,8 @@
           "other": "ישנם %{count} סניפים עם מלאי קרוב אליך"
         },
         "toggle_location": "שנה מיקום",
-        "or": "אוֹ",
-        "cancel": "לְבַטֵל",
+        "or": "או",
+        "cancel": "לבטל",
         "your_location": "המיקום שלך",
         "search_button": "מצא חנויות",
         "no_stores_found": "לא נמצאו חנויות",
@@ -980,7 +980,7 @@
         }
       },
       "clipboard": {
-        "copied": "מוּעֲתָק",
+        "copied": "מועתק",
         "failed_to_copy": "ההעתקה נכשלה"
       },
       "discount_errors": {
@@ -1134,8 +1134,8 @@
           "shipping_credential_cn": "מספר תעודת זהות של תושב",
           "tax_credential_it": "קוד פיסקאל (אופציונלי)",
           "tax_email_it": "PEC (אופציונלי)",
-          "tax_credential_cl": "שִׁגרָה",
-          "shipping_credential_cl": "שִׁגרָה",
+          "tax_credential_cl": "שגרה",
+          "shipping_credential_cl": "שגרה",
           "tax_credential_co": "סדולה/IRA",
           "tax_credential_type_co": "טיפו סדולה",
           "shipping_credential_co": "סדולה/IRA",
@@ -1160,12 +1160,12 @@
         "amazon_payments_failed_mfa_challenge": "לא ניתן היה להשתמש בשיטת התשלום שנבחרה. בחר שיטה אחרת או צור קשר עם הבנק או מנפיק הכרטיס שלך.",
         "amazon_payments_abandoned_mfa_challenge": "לא ניתן היה להשלים את התשלום שלך. נסה אמצעי תשלום אחר או צור קשר עם הבנק או מנפיק הכרטיס שלך.",
         "amazon_payments_could_not_enqueue_authorize": "אירעה בעיה בעיבוד התשלום שלך. נסה שוב או השתמש באמצעי תשלום אחר.",
-        "title": "תַשְׁלוּם",
+        "title": "תשלום",
         "amount_left_to_pay_label": "תשלום לתשלום:",
         "discount_button_action_label": "החלת קוד הנחה",
         "gift_card_code_label": "קוד כרטיס מתנה",
-        "apply_gift_card_button_label": "לִפְנוֹת",
-        "gift_card_balance_label": "לְאַזֵן:",
+        "apply_gift_card_button_label": "לפנות",
+        "gift_card_balance_label": "לאזן:",
         "supported_card_brands_more_label": "ועוד…",
         "detected_card_brand": "מותג כרטיס שזוהה: {brand}",
         "credit_card_vaulting_sign_in_banner_title": "שמור את כרטיס האשראי שלך",
@@ -1189,7 +1189,7 @@
         "delete_customer_mandate_modal_title": "להסיר את כרטיס התשלום הזה?",
         "delete_customer_mandate_modal_body": "אם תסיר את הכרטיס הזה, תצטרך להוסיף אותו שוב לפני שתוכל להשתמש בו לתשלומים.",
         "delete_customer_mandate_modal_confirm": "הסר כרטיס",
-        "delete_customer_mandate_modal_cancel": "לְבַטֵל",
+        "delete_customer_mandate_modal_cancel": "לבטל",
         "card_verification_value_label": "קוד אבטחה",
         "card_verification_value_placeholder": "קוד אבטחה",
         "card_verification_confirm": "למטרות אימות, הזן את קוד האבטחה של הכרטיס שלך.",
@@ -1203,9 +1203,9 @@
         "card_start_placeholder": "תאריך הנפקה (חודש / שנה)",
         "card_issue_number_label": "מספר גיליון",
         "card_issue_number_placeholder": "מספר גיליון",
-        "card_change_label": "לְשַׁנוֹת",
+        "card_change_label": "לשנות",
         "card_update_label": "עדכון כרטיס",
-        "paypal_disconnect": "לְנַתֵק",
+        "paypal_disconnect": "לנתק",
         "ends_with_label": "מסתיים ב-%{last_digits}",
         "masked_digits_label": "•••• %{אחרון_ספרות}",
         "payment_method_saved": "אמצעי התשלום נשמר",
@@ -1253,7 +1253,7 @@
         "paypal_wallet_label": "ארנק PayPal",
         "shop_pay_installments_label": "חנות תשלום בתשלומים",
         "paypal_modal": {
-          "order_contains_subscriptions": "מִנוּי",
+          "order_contains_subscriptions": "מנוי",
           "order_contains_fixed_selling_plans": "ייתכן שהסכום הכולל לא יכלול מיסים, משלוח, חיובים נדחים והנחות מסוימות. המשך לתשלום עבור הסכום לתשלום היום."
         },
         "klarna_label": "קלרנה",
@@ -1264,15 +1264,15 @@
         "multibanco_label": "מולטיבנקו",
         "eps_label": "eps-אוברווייזונג",
         "klarna_slice_it_label": "מימון עם קלרנה",
-        "ideal_label": "אִידֵאָלִי",
-        "bank_picker_label": "בַּנק",
+        "ideal_label": "אידאלי",
+        "bank_picker_label": "בנק",
         "afterpay_label": "תשלום לאחר מכן",
         "cashapppay_label": "תשלום באפליקציית מזומן",
         "przelewy24_label": "פרז'לווי24",
         "blik_label": "בליק",
         "twint_label": "טווינט",
         "mobilepay_label": "מוביילפיי",
-        "swish_label": "לְהַצְלִיף",
+        "swish_label": "להצליף",
         "vipps_label": "ויפפס",
         "grabpay_label": "גראבפיי",
         "kcp_creditcard_label": "כרטיס אשראי KCP",
@@ -1310,9 +1310,9 @@
           "multibanco": {
             "buyer_action_info": "התשלום שלך בסך %{amount_due} הגיע לפירעון.",
             "instruction_html": "בצעו את התשלום שלכם במולטיבנקו או באופן מקוון באמצעות הפרטים שלהלן. לשאלות או לעדכון פרטי תשלום, אנא צרו קשר.",
-            "entity": "יֵשׁוּת",
-            "reference": "הַפנָיָה",
-            "amount": "סְכוּם",
+            "entity": "ישות",
+            "reference": "הפניה",
+            "amount": "סכום",
             "find_nearest_atm": "מצא את הכספומט הקרוב ביותר"
           }
         },
@@ -1327,7 +1327,7 @@
           "buying_gift_card": "לא ניתן להשתמש באשראי בחנות כדי לקנות כרטיס מתנה",
           "no_fixed_selling_plans": "לא ניתן להשתמש באשראי חנות עם אפשרויות רכישה נדחית"
         },
-        "clear": "בָּרוּר",
+        "clear": "ברור",
         "billing_must_match_shipping_notice": "כתובת החיוב של אמצעי התשלום שלך חייבת להתאים לכתובת המשלוח.",
         "same_billing_address_checkbox_label": "השתמש בכתובת המשלוח ככתובת לחיוב",
         "location_billing_address_label": "כתובת חיוב של מיקום",
@@ -1344,7 +1344,7 @@
         "preview_not_available": {
           "title": "תצוגה מקדימה אינה זמינה",
           "content": "אל דאגה, תשלום מהיר זה עובד גם עבור הלקוחות שלכם.",
-          "button": "בְּסֵדֶר"
+          "button": "בסדר"
         },
         "card_fields": {
           "errors": {
@@ -1368,33 +1368,33 @@
         "saved_credit_card_info": "ארבע הספרות האחרונות",
         "saved_credit_card_cvv_verification": "לצורכי אימות, אנא הזן את קוד האבטחה של הכרטיס שלך.",
         "saved_credit_card_actions": {
-          "edit": "לַעֲרוֹך",
-          "delete": "לִמְחוֹק"
+          "edit": "לערוך",
+          "delete": "למחוק"
         },
         "saved_credit_cards_modal": {
           "view_all_label": "הצג את כל הכרטיסים השמורים",
-          "done": "נַעֲשָׂה",
-          "cancel": "לְבַטֵל"
+          "done": "נעשה",
+          "cancel": "לבטל"
         },
         "add_credit_card_modal": {
           "title": "הוסף כרטיס",
-          "save": "לְהַצִיל",
-          "cancel": "לְבַטֵל"
+          "save": "להציל",
+          "cancel": "לבטל"
         },
         "delete_credit_card_modal": {
-          "cancel": "לְבַטֵל",
-          "delete": "לִמְחוֹק",
+          "cancel": "לבטל",
+          "delete": "למחוק",
           "title": "מחיקת כרטיס",
           "confirmation": "האם אתה בטוח שברצונך למחוק את האות {{brandName}} שמסתיימת ב {{lastDigits}} ?"
         },
         "edit_credit_card_modal": {
-          "done": "נַעֲשָׂה",
-          "cancel": "לְבַטֵל",
+          "done": "נעשה",
+          "cancel": "לבטל",
           "fields": {
             "billing": "חשבונית אל",
             "default": "הגדר כברירת מחדל",
             "card_number": "מספר כרטיס",
-            "expiry": "תַאֲרִיך תְפוּגָה",
+            "expiry": "תאריך תפוגה",
             "security_code": "קוד אבטחה",
             "name": "שם על הכרטיס"
           },
@@ -1461,19 +1461,19 @@
       },
       "general": {
         "page_title": "תשלום",
-        "error_page_title": "שְׁגִיאָה",
+        "error_page_title": "שגיאה",
         "skip_to_content": "דלג לתוכן",
         "breadcrumb": "פירורי לחם",
-        "continue_button_label": "לְהַמשִׁיך",
+        "continue_button_label": "להמשיך",
         "complete_purchase_button_label": "השלם את ההזמנה",
         "pay_now_button_label": "שלם עכשיו",
         "authenticate_purchase_button_label": "אימות תשלום",
-        "edit_link_label": "לַעֲרוֹך",
+        "edit_link_label": "לערוך",
         "all_rights_reserved": "כל הזכויות שמורות %{shop_name}",
-        "print_policies_link_label": "הֶדפֵּס",
-        "cart": "עֲגָלָה",
-        "close_modal_label": "לִסְגוֹר",
-        "close_notice_label": "לִסְגוֹר",
+        "print_policies_link_label": "הדפס",
+        "cart": "עגלה",
+        "close_modal_label": "לסגור",
+        "close_notice_label": "לסגור",
         "expand_notice_label": "הצג עוד",
         "continue_to_shipping_method": "המשך למשלוח",
         "continue_to_payment_method": "המשך לתשלום",
@@ -1673,7 +1673,7 @@
         "full_price": "מחיר מלא:",
         "title": "תשלום - {{shopName}}",
         "full_title": "{{pageTitle}} - {{shopName}} - תשלום",
-        "loading": "טְעִינָה…",
+        "loading": "טעינה…",
         "loading_title": "תשלום - {{shopName}}",
         "google_map_title": "מפת גוגל",
         "confirm_order_button_label": "אישור הזמנה",
@@ -1681,11 +1681,11 @@
         "submit_for_review_button_label": "שלח לבדיקה",
         "submit_for_review_notice_label": "התשלום לא יבוצע עד לבדיקת ההזמנה שלך",
         "continue_to_payment_plans_button_label": "המשך לתוכניות התשלום",
-        "back_button_label": "לַחֲזוֹר",
+        "back_button_label": "לחזור",
         "choose_delivery_strategy": "בחר שיטת משלוח",
         "autocomplete_zero_item": "אין פריטים זמינים",
         "autocomplete_powered_by_google": "מופעל על ידי {{brandName}}",
-        "submit": "לְהַגִישׁ",
+        "submit": "להגיש",
         "processing": "עיבוד...",
         "stepper": {
           "increase": "הגדלת {{type}}",
@@ -1697,36 +1697,36 @@
         "remove_tag": "הסר תגית",
         "dates": {
           "weekdays": {
-            "monday": "יוֹם שֵׁנִי",
-            "tuesday": "יוֹם שְׁלִישִׁי",
-            "wednesday": "יוֹם רְבִיעִי",
-            "thursday": "יוֹם חֲמִישִׁי",
-            "friday": "יוֹם שִׁישִׁי",
-            "saturday": "שַׁבָּת",
-            "sunday": "יוֹם רִאשׁוֹן"
+            "monday": "יום שני",
+            "tuesday": "יום שלישי",
+            "wednesday": "יום רביעי",
+            "thursday": "יום חמישי",
+            "friday": "יום שישי",
+            "saturday": "שבת",
+            "sunday": "יום ראשון"
           },
           "weekdays_abbreviation": {
             "monday": "מו",
             "tuesday": "טו",
-            "wednesday": "אָנוּ",
+            "wednesday": "אנו",
             "thursday": "ה'",
             "friday": "פר",
             "saturday": "סא",
             "sunday": "סו"
           },
           "months": {
-            "january": "יָנוּאָר",
-            "february": "פֶבּרוּאָר",
-            "march": "מַרס",
-            "april": "אַפּרִיל",
-            "may": "מַאִי",
-            "june": "יוּנִי",
-            "july": "יוּלִי",
-            "august": "אוֹגוּסט",
-            "september": "סֶפּטֶמבֶּר",
-            "october": "אוֹקְטוֹבֶּר",
-            "november": "נוֹבֶמבֶּר",
-            "december": "דֵצֶמבֶּר"
+            "january": "ינואר",
+            "february": "פברואר",
+            "march": "מרס",
+            "april": "אפריל",
+            "may": "מאי",
+            "june": "יוני",
+            "july": "יולי",
+            "august": "אוגוסט",
+            "september": "ספטמבר",
+            "october": "אוקטובר",
+            "november": "נובמבר",
+            "december": "דצמבר"
           }
         },
         "datepicker": {
@@ -1743,7 +1743,7 @@
           }
         },
         "sheet": {
-          "expand": "לְהַרְחִיב"
+          "expand": "להרחיב"
         },
         "dropzone": {
           "add_file": "הוסף קובץ",
@@ -1755,18 +1755,18 @@
         "recurring_total_intervals": {
           "month": {
             "other": "חודשים",
-            "one": "חוֹדֶשׁ"
+            "one": "חודש"
           },
           "year": {
-            "one": "שָׁנָה",
+            "one": "שנה",
             "other": "%{count} שנים"
           },
           "day": {
-            "one": "יְוֹם",
+            "one": "יום",
             "other": "%{count} ימים"
           },
           "week": {
-            "one": "שָׁבוּעַ",
+            "one": "שבוע",
             "other": "%{count} שבועות"
           }
         },
@@ -1803,8 +1803,8 @@
         "line_to_check_out": "אתה בתור לצ'ק אאוט",
         "cart_summary_heading": "העגלה שלך",
         "merchandise": {
-          "available": "זָמִין",
-          "sold_out": "הַכַּרטִיסִים אָזלוּ"
+          "available": "זמין",
+          "sold_out": "הכרטיסים אזלו"
         },
         "inventory": {
           "partial_inventory_banner": "חלק מהעגלה שלך אזל ולא יהיה זמין לרכישה בקופה.",
@@ -1815,7 +1815,7 @@
             "link": "חזרה לחנות"
           }
         },
-        "title": "תוֹר",
+        "title": "תור",
         "time_to_checkout_title": "הגיע הזמן לקופה - {{shopName}}",
         "estimated_wait_time": {
           "calculating": "חישוב זמן המתנה משוער",
@@ -1852,17 +1852,17 @@
         "artifact_dissatisfaction_without_violation": "הייתה בעיה בעיבוד ההזמנה שלך. נסה שוב בעוד מספר דקות."
       },
       "pickup_point": {
-        "location_is_currently_closed": "סָגוּר",
-        "business_hours": "שְׁעוֹת פְּתִיחָה",
+        "location_is_currently_closed": "סגור",
+        "business_hours": "שעות פתיחה",
         "no_business_hours": "אין שעות פתיחה זמינות",
         "open_twenty_four_hours": "פתוח 24/7",
         "title": "נקודת איסוף",
-        "or": "אוֹ",
-        "search_button": "לְחַפֵּשׂ",
-        "address_label": "כְּתוֹבֶת",
+        "or": "או",
+        "search_button": "לחפש",
+        "address_label": "כתובת",
         "selector_tabs": "בורר נקודות איסוף",
-        "selector_tab_map": "מַפָּה",
-        "selector_tab_list": "רְשִׁימָה",
+        "selector_tab_map": "מפה",
+        "selector_tab_list": "רשימה",
         "could_not_resolve_address": "לא ניתן היה לאתר את הכתובת שלך. נסה שוב או השתמש בכתובת אחרת.",
         "no_pickup_points_near_you": "לא נמצאו נקודות איסוף ליד הכתובת שנבחרה",
         "no_pickup_points_near_location": "לא נמצאו נקודות איסוף בקרבת מיקומך",
@@ -1913,39 +1913,39 @@
         }
       },
       "contact": {
-        "title": "מֵידָע",
-        "address_title": "כְּתוֹבֶת",
+        "title": "מידע",
+        "address_title": "כתובת",
         "shipping_used_as_billing_notice": "כתובת זו תשמש גם ככתובת החיוב שלך עבור הזמנה זו.",
         "delivery_option_title": "שיטת משלוח",
-        "contact_method_title": "מַגָע",
-        "email_label": "אֶלֶקטרוֹנִי",
-        "email_placeholder": "אֶלֶקטרוֹנִי",
+        "contact_method_title": "מגע",
+        "email_label": "אלקטרוני",
+        "email_placeholder": "אלקטרוני",
         "email_or_phone_label": "דוא\"ל או מספר טלפון נייד",
         "email_or_phone_placeholder": "דוא\"ל או מספר טלפון נייד",
         "stored_addresses_label": "כתובות שנשמרו",
         "available_addresses_label": "כתובות זמינות",
         "new_address_label": "השתמש בכתובת חדשה",
-        "first_name_label": "שֵׁם פְּרַטִי",
+        "first_name_label": "שם פרטי",
         "optional_first_name_label": "שם פרטי (אופציונלי)",
-        "last_name_label": "שֵׁם מִשׁפָּחָה",
-        "company_label": "חֶברָה",
+        "last_name_label": "שם משפחה",
+        "company_label": "חברה",
         "company_attention_label": "חברה/תשומת לב",
         "optional_company_attention_label": "חברה/תשומת לב (אופציונלי)",
         "optional_company_label": "חברה (אופציונלי)",
-        "address1_label": "כְּתוֹבֶת",
+        "address1_label": "כתובת",
         "address2_label": "דירה, סוויטה וכו'.",
         "optional_address2_label": "דירה, סוויטה וכו' (אופציונלי)",
-        "city_label": "עִיר",
+        "city_label": "עיר",
         "country_label": "מדינה/אזור",
         "country_code": "קוד מדינה/אזור",
-        "province_label": "מָחוֹז",
-        "province_placeholder": "מָחוֹז",
-        "county_label": "מָחוֹז",
-        "county_placeholder": "מָחוֹז",
-        "state_label": "מְדִינָה",
-        "state_placeholder": "מְדִינָה",
-        "region_label": "אֵזוֹר",
-        "region_placeholder": "אֵזוֹר",
+        "province_label": "מחוז",
+        "province_placeholder": "מחוז",
+        "county_label": "מחוז",
+        "county_placeholder": "מחוז",
+        "state_label": "מדינה",
+        "state_placeholder": "מדינה",
+        "region_label": "אזור",
+        "region_placeholder": "אזור",
         "region_none": "אף אחד לא נבחר",
         "prefecture_label": "מחוז",
         "prefecture_placeholder": "מחוז",
@@ -1955,9 +1955,9 @@
         "emirate_placeholder": "אמירות",
         "state_and_territory_label": "מדינה/טריטוריה",
         "state_and_territory_placeholder": "מדינה/טריטוריה",
-        "phone_label": "טֵלֵפוֹן",
+        "phone_label": "טלפון",
         "optional_phone_label": "טלפון (אופציונלי)",
-        "phone_placeholder": "טֵלֵפוֹן",
+        "phone_placeholder": "טלפון",
         "phone_tooltip": "במקרה שנצטרך ליצור איתך קשר בנוגע להזמנה שלך",
         "zip_code_label": "מיקוד",
         "optional_zip_code_label": "מיקוד (אופציונלי)",
@@ -2062,7 +2062,7 @@
       },
       "alternative_payment_method_banner": {
         "express_checkout": "תשלום אקספרס",
-        "or": "אוֹ",
+        "or": "או",
         "or_pay_another_way": "או לשלם בדרך אחרת",
         "or_check_out_another_way": "או לבדוק בדרך אחרת",
         "or_pay_with_credit_card": "או לשלם בכרטיס אשראי",
@@ -2075,15 +2075,15 @@
         "escape_confirmation": "שילמת עבור ההזמנה שלך.",
         "escape_action": "הצג אישור הזמנה ›",
         "components": {
-          "close": "לִסְגוֹר",
+          "close": "לסגור",
           "expand": "הצג עוד",
           "processing": "עיבוד...",
-          "submit": "לְהַגִישׁ"
+          "submit": "להגיש"
         }
       },
       "shipping": {
         "subscription_delivery_description": {
-          "shipping_price_included": "כּוֹלֵל",
+          "shipping_price_included": "כולל",
           "recurring_order_shipping_price": "ואחריו %{recurring_order_shipping_price}",
           "first_order_shipping_price_included": "הזמנה ראשונה כלולה, ולאחריה %{recurring_order_shipping_price}",
           "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} למשלוח), ואחריו %{recurring_order_shipping_price}",
@@ -2192,8 +2192,8 @@
         "shipping_address_title": "לשלוח אל",
         "add_address": "השתמש בכתובת אחרת",
         "add_delivery_instructions": "הוסף הוראות משלוח",
-        "edit": "לַעֲרוֹך",
-        "delete": "לִמְחוֹק",
+        "edit": "לערוך",
+        "delete": "למחוק",
         "address_more": "פעולות נוספות עבור כתובת זו",
         "address_edit": "עריכת כתובת",
         "address_delete": "מחיקת כתובת",
@@ -2201,8 +2201,8 @@
         "address_default": "הגדר כברירת מחדל",
         "address_form": {
           "add_address": "הוסף כתובת",
-          "save": "לְהַצִיל",
-          "cancel": "לְבַטֵל",
+          "save": "להציל",
+          "cancel": "לבטל",
           "generic_error": "הייתה בעיה בשמירת הכתובת שלך. אנא נסה שוב.",
           "one_time_address_subtitle": "השתמש בכתובת חד פעמית עבור הזמנה זו"
         },
@@ -2225,7 +2225,7 @@
         "pre_order_ships_date": "משלוחים %{date}",
         "split_shipping_shipped_by_shop": "נשלח על ידי %{shop_name}",
         "split_shipping_multiple_shipment_label": "משלוחים מרובים",
-        "split_shipping_shipping_label": "שִׁיטָה",
+        "split_shipping_shipping_label": "שיטה",
         "split_shipping_shipment_notice": "ההזמנה שלך תגיע בכמות של %{quantity_shipments}",
         "split_shipping_first_shipment_notice": "ההזמנה הראשונה שלך תגיע ב-%{quantity_shipments}",
         "split_shipping_multiple_shipment_quantity_label": "משלוחים %{quantity}",
@@ -2237,9 +2237,9 @@
         "split_shipping_option_free": "משלוח חינם",
         "split_shipping_option_lowest_price": "המחיר הנמוך ביותר",
         "split_shipping_option_fastest": "המהיר ביותר",
-        "split_shipping_option_recommended": "מוּמלָץ",
-        "split_shipping_option_custom": "מִנְהָג",
-        "delivery_title": "מְסִירָה",
+        "split_shipping_option_recommended": "מומלץ",
+        "split_shipping_option_custom": "מנהג",
+        "delivery_title": "מסירה",
         "shipping_method_one_time_purchase_group_title": "רכישה חד פעמית",
         "shipping_method_first_shipment_group_title": {
           "one": "משלוח ראשון",
@@ -2291,18 +2291,18 @@
         "prime_not_available": {
           "default": "משלוח ראשי אינו זמין עבור ההזמנה שלך. אפשרויות המשלוח שלך עודכנו."
         },
-        "title": "מִשׁלוֹחַ",
-        "free_rate_label": "לְשַׁחְרֵר",
+        "title": "משלוח",
+        "free_rate_label": "לשחרר",
         "shipping_method_title": "שיטת משלוח",
-        "shipping_method_subscription_group_title": "מִנוּי",
+        "shipping_method_subscription_group_title": "מנוי",
         "subscription_shipping": "משלוח מנוי"
       },
       "delivery_options": {
-        "free_total_label": "לְשַׁחְרֵר",
-        "ship": "סְפִינָה",
+        "free_total_label": "לשחרר",
+        "ship": "ספינה",
         "ship_to_address": "לשלוח לכתובת",
         "shipping_address": "כתובת למשלוח",
-        "pick_up": "לֶאֱסוֹף",
+        "pick_up": "לאסוף",
         "pick_up_from_store": "איסוף בחנות",
         "pick_up_locations": "מיקומי חנויות",
         "pick_up_in_one_hour": "בדרך כלל מוכן תוך שעה",
@@ -2329,7 +2329,7 @@
         "save_my_information_label": "שמור מידע זה לפעם הבאה",
         "invalid_address": "הכתובת שנבחרה אינה חוקית. %{update_address_link} או בחר כתובת אחרת.",
         "incomplete_address": "הכתובת שנבחרה אינה שלמה. %{update_address_link} או בחר כתובת אחרת.",
-        "rollup_label": "חֶשְׁבּוֹן",
+        "rollup_label": "חשבון",
         "invalid_shipping_method_summary": "בחר כתובת משלוח תקפה כדי להציג את שיטות המשלוח הזמינות",
         "saved_address_option_description": {
           "one": "שמרת כתובת אחת {{count}} .",
@@ -2367,8 +2367,8 @@
         "purchase_options_policy": "מדיניות אפשרויות רכישה",
         "purchase_options_cancellation_policy": "ביטולים",
         "cookie_preferences": "עוגיות",
-        "shipping_policy": "מִשׁלוֹחַ",
-        "contact_information": "מַגָע",
+        "shipping_policy": "משלוח",
+        "contact_information": "מגע",
         "refund_policy": "מדיניות החזרים",
         "privacy_policy": "מדיניות הפרטיות",
         "legal_notice": "הודעה משפטית",
@@ -2425,7 +2425,7 @@
         "add_tip": "הוסף טיפ",
         "update_tip": "טיפ לעדכון",
         "message": "תודה, אנו מעריכים זאת.",
-        "no_tip_label": "אַף לֹא אֶחָד"
+        "no_tip_label": "אף לא אחד"
       },
       "open_graph_meta_tag": {
         "title_with_products": {
@@ -2436,11 +2436,11 @@
       },
       "billing": {
         "billing_address_title": "חשבונית אל",
-        "edit": "לַעֲרוֹך",
-        "delete": "לִמְחוֹק",
+        "edit": "לערוך",
+        "delete": "למחוק",
         "address_form": {
-          "save": "לְהַצִיל",
-          "cancel": "לְבַטֵל",
+          "save": "להציל",
+          "cancel": "לבטל",
           "add_address": "הוסף כתובת"
         },
         "address_edit": "עריכת כתובת",
@@ -2450,9 +2450,9 @@
         "add_address": "השתמש בכתובת אחרת"
       },
       "payment_summary": {
-        "express_payment_gateway_label": "אֶקְסְפּרֶס",
-        "manual_payment_gateway_label": "יָדָנִי",
-        "free_label": "לְשַׁחְרֵר",
+        "express_payment_gateway_label": "אקספרס",
+        "manual_payment_gateway_label": "ידני",
+        "free_label": "לשחרר",
         "billing_address_title": "כתובת לחיוב"
       },
       "company_location": {
@@ -2460,42 +2460,42 @@
       }
     },
     "pagination": {
-      "previous": "קוֹדֵם",
-      "next": "הַבָּא"
+      "previous": "קודם",
+      "next": "הבא"
     },
     "links": {
       "learn_more": "למידע נוסף"
     },
     "feed": {
-      "more": "יוֹתֵר"
+      "more": "יותר"
     },
     "attributes": {
-      "email": "אֶלֶקטרוֹנִי",
-      "password": "סִיסמָה",
+      "email": "אלקטרוני",
+      "password": "סיסמה",
       "password_confirmation": "אישור הסיסמה",
-      "first_name": "שֵׁם פְּרַטִי",
-      "last_name": "שֵׁם מִשׁפָּחָה",
-      "body": "גוּף",
-      "signature": "כְּתוֹבֶת"
+      "first_name": "שם פרטי",
+      "last_name": "שם משפחה",
+      "body": "גוף",
+      "signature": "כתובת"
     },
     "addresses": {
       "zip_code": "מיקוד",
       "postal_code": "מיקוד",
       "postcode": "מיקוד",
       "pincode": "קוד סודי",
-      "region": "אֵזוֹר",
+      "region": "אזור",
       "prefecture": "מחוז",
-      "province": "מָחוֹז",
-      "state": "מְדִינָה",
+      "province": "מחוז",
+      "state": "מדינה",
       "state_and_territory": "מדינה/טריטוריה",
-      "county": "מָחוֹז",
+      "county": "מחוז",
       "emirate": "אמירות",
       "governorate": "מחוז",
       "confirm": "האם אתה בטוח שברצונך למחוק את הכתובת הזו?"
     },
     "collections": {
       "sorting": {
-        "manual": "מוּבלָט",
+        "manual": "מובלט",
         "best_selling": "הנמכר ביותר",
         "az": "לפי סדר אלפביתי, AZ",
         "za": "לפי סדר אלפביתי, ZA",
@@ -2625,8 +2625,8 @@
       "order": {
         "not_available": "הזמנה זו אינה זמינה",
         "financial_status": {
-          "authorized": "מוּסמָך",
-          "pending": "תָלוּי וְעוֹמֵד",
+          "authorized": "מוסמך",
+          "pending": "תלוי ועומד",
           "paid": "בתשלום",
           "unpaid": "לא שולם",
           "voided": "בוטל",
@@ -2637,16 +2637,16 @@
         },
         "fulfillment_status": {
           "fulfilled": "הוגש",
-          "complete": "לְהַשְׁלִים",
-          "partial": "חֶלקִי",
+          "complete": "להשלים",
+          "partial": "חלקי",
           "unfulfilled": "לא מומש",
           "restocked": "מלאי מחדש"
         },
         "transaction_status": {
-          "success": "הַצלָחָה",
-          "pending": "תָלוּי וְעוֹמֵד",
-          "failure": "כֶּשֶׁל",
-          "error": "שְׁגִיאָה"
+          "success": "הצלחה",
+          "pending": "תלוי ועומד",
+          "failure": "כשל",
+          "error": "שגיאה"
         },
         "cancel_reason": {
           "declined": "התשלום נדחה",
@@ -2654,7 +2654,7 @@
           "fraud": "הזמנה הונאה",
           "customer": "לקוח שינה/ביטל הזמנה",
           "staff": "שגיאת צוות",
-          "other": "אַחֵר"
+          "other": "אחר"
         },
         "cash_on_delivery": "תשלום במזומן במשלוח (COD)"
       },
@@ -2756,13 +2756,13 @@
     "filters": {
       "availability": {
         "value": {
-          "in_stock": "בִּמלַאִי",
+          "in_stock": "במלאי",
           "out_of_stock": "אזל מהמלאי"
         }
       },
       "boolean": {
-        "true_label": "כֵּן",
-        "false_label": "לֹא"
+        "true_label": "כן",
+        "false_label": "לא"
       }
     },
     "search": {
@@ -2777,19 +2777,19 @@
       "blog_or_article_with_error": "שגיאה - %{title}",
       "products": "מוצרים",
       "shopping_cart": "עגלת הקניות שלך",
-      "account": "חֶשְׁבּוֹן",
+      "account": "חשבון",
       "create_account": "צור חשבון",
       "reset_account": "איפוס חשבון",
       "addresses": "כתובות",
       "order": "הזמנה %{name}",
-      "search": "לְחַפֵּשׂ",
+      "search": "לחפש",
       "search_results": {
         "one": "חיפוש: נמצאה %{count} תוצאה עבור \"%{terms}\"",
         "other": "חיפוש: %{count} תוצאות נמצאו עבור \"%{terms}\""
       },
       "collections": "אוספים",
       "not_found": "404 לא נמצא",
-      "challenge": "אֶתגָר",
+      "challenge": "אתגר",
       "checkpoint": "מחסום"
     },
     "cart": {
@@ -2798,12 +2798,12 @@
     "challenge": {
       "message": "כדי להמשיך, אנא הודיעו לנו שאתם לא רובוטים.",
       "error": "תשובתך לא הייתה נכונה, אנא נסה שוב.",
-      "submit_button_text": "לְהַגִישׁ"
+      "submit_button_text": "להגיש"
     },
     "checkpoint": {
       "message": "פתור את ה-Captcha כדי להמשיך",
       "error": "אימות ה-CAPTCHA נכשל",
-      "submit_button_text": "לְהַגִישׁ"
+      "submit_button_text": "להגיש"
     },
     "store_availability": {
       "pick_up_time": {
@@ -2833,26 +2833,26 @@
       "order_details_skeleton_accessibility_label": "התחבר כדי לצפות בכל פרטי ההזמנה.",
       "billing_address": "כתובת לחיוב",
       "card_ending_with": "מסתיים ב {{lastDigits}}",
-      "contact": "מַגָע",
+      "contact": "מגע",
       "contact_information": "פרטי קשר",
-      "company": "חֶברָה",
+      "company": "חברה",
       "company_and_location": "חברה ומיקום",
       "fully_refunded_label": "החזר כספי",
       "group_title_label": "חלק מ: {{groupTitle}}",
       "view_controls": {
-        "gallery": "גָלֶרֵיָה",
-        "list": "רְשִׁימָה"
+        "gallery": "גלריה",
+        "list": "רשימה"
       },
       "grouped_view_components": {
         "expand_line_items": "הצג {{count}} פריטים",
         "collapse_line_items": "הסתר {{count}} פריטים",
         "line_item_summary_list_accessibility_label": "פריטים בחבילה {{productTitle}}"
       },
-      "discount": "דִיסקוֹנט",
+      "discount": "דיסקונט",
       "hide_items": "הסתר פריטים",
       "loading": "טוען את פרטי ההזמנה",
       "loading_finished_accessibility_message": "פרטי ההזמנה נטענו",
-      "location": "מִקוּם",
+      "location": "מקום",
       "image_gallery": {
         "next": "הצג את הפריטים הבאים",
         "previous": "הצג פריטים קודמים",
@@ -2865,7 +2865,7 @@
         "open": "הצג סיכום הזמנה",
         "closed": "הסתר את סיכום ההזמנה"
       },
-      "no_data": "אַף לֹא אֶחָד",
+      "no_data": "אף לא אחד",
       "no_data_provided_accessibility_label": "שם {{fieldName}} ריק",
       "not_applicable": "לא רלוונטי",
       "paid_amount": "בתשלום",
@@ -2873,14 +2873,14 @@
       "payment": {
         "status_in_review": "התשלום יבוצע לאחר בדיקה",
         "status_unpaid": "התשלום מועד אחרון לתאריך {{date}}",
-        "title": "תַשְׁלוּם",
+        "title": "תשלום",
         "payment_type": {
           "gift_card": "כרטיס מתנה",
           "store_credit": "אשראי בחנות",
-          "money_order": "הַמחָאַת כֶּסֶף",
+          "money_order": "המחאת כסף",
           "cash_on_delivery": "תשלום במזומן במשלוח (COD)",
           "bank_deposit": "הפקדה בבנק",
-          "manual": "יָדָנִי"
+          "manual": "ידני"
         },
         "card_payment_details": "מסתיים ב {{lastDigits}} - {{formattedTransactionAmount}}",
         "gift_card_payment_details": "מסתיים ב {{lastDigits}} - {{formattedTransactionAmount}}",
@@ -2903,8 +2903,8 @@
         },
         "emv_details": {
           "auth": "אישור:",
-          "aid": "סִיוּעַ:",
-          "source": "מָקוֹר:"
+          "aid": "סיוע:",
+          "source": "מקור:"
         }
       },
       "paid_with_shop_pay_installments_card": {
@@ -2925,7 +2925,7 @@
         "resend_link": "שלח קישור חדש",
         "link_expired": "פג תוקף הקישור"
       },
-      "remaining_amount": "נוֹתָר",
+      "remaining_amount": "נותר",
       "marketing_section_title": "חדשות והצעות",
       "marketing_description": "תקבלו מיילים שיווקיים. תוכלו לבטל את המנוי בכל עת.",
       "marketing_checkbox_label": "שלח לי אימייל עם חדשות והצעות",
@@ -2945,8 +2945,8 @@
         "address": "כתובת למשלוח",
         "address_map_marker": "כתובת למשלוח",
         "method": "שיטת משלוח",
-        "summary": "מִשׁלוֹחַ",
-        "free": "לְשַׁחְרֵר",
+        "summary": "משלוח",
+        "free": "לשחרר",
         "free_shipping_discount": "משלוח חינם",
         "one_time": "משלוח חד פעמי",
         "subscription": "משלוח מנוי"
@@ -2993,9 +2993,9 @@
       "ok_duties_tooltip": "הזמנה זו נשלחת ממדינה אחרת, לכן נוספו מכסים לסכום ההזמנה הכולל שלך.",
       "error_duties_tooltip": "הזמנה זו נשלחת ממדינה אחרת, לכן ייתכן שייגבו מכסים ומסים בעת המשלוח.",
       "zero_duties_tooltip": "הזמנה זו נשלחת ממדינה אחרת. לא יחולו מכסים על הזמנות בערך זה.",
-      "tip": "עֵצָה",
+      "tip": "עצה",
       "title": "הזמנה {{name}}",
-      "total": "סַך הַכֹּל",
+      "total": "סך הכל",
       "unit_price": "{{price}} ליחידה",
       "pagination": {
         "load_more": "טען עוד",
@@ -3058,22 +3058,22 @@
       "three_d_secure": {
         "title": "מאובטח תלת-ממדי"
       },
-      "delete_payment_method_button": "לִמְחוֹק",
-      "back_button": "בְּחֲזָרָה",
-      "default": "בְּרִירַת מֶחדָל",
+      "delete_payment_method_button": "למחוק",
+      "back_button": "בחזרה",
+      "default": "ברירת מחדל",
       "store_credit": {
         "details_modal": {
-          "amount_label": "סְכוּם",
-          "date_label": "תַאֲרִיך",
+          "amount_label": "סכום",
+          "date_label": "תאריך",
           "pagination": {
             "load_more_label": "טען עוד",
             "load_more_accessibility_label": "טען עוד סכומים שפג תוקפם"
           },
           "title": "זיכוי חנות שפג תוקפו",
-          "balance_label": "לְאַזֵן",
-          "event_label": "מִקרֶה",
+          "balance_label": "לאזן",
+          "event_label": "מקרה",
           "events": {
-            "adjustment": "הַתאָמָה",
+            "adjustment": "התאמה",
             "order_payment": "תשלום הזמנה",
             "order_refund": "החזר כספי על ההזמנה",
             "payment_failure": "כשל בתשלום",
@@ -3084,9 +3084,9 @@
           "expirable_balance_info": "חלק מהיתרה שלך יפוג תוקף במועד עתידי",
           "expirable_amount_label": "סכום כולל לפוגתו",
           "expirable_amounts_info": "סכומים שפג תוקפם מוקדם יותר יוחלו תחילה בקופה",
-          "expirable_amounts_button": "נוֹף",
+          "expirable_amounts_button": "נוף",
           "expired_amounts_button": "הצג סכומים שפג תוקפם",
-          "expiration_date_label": "תַאֲרִיך תְפוּגָה"
+          "expiration_date_label": "תאריך תפוגה"
         },
         "label": "אשראי בחנות",
         "accesibility_label": "אשראי בחנות - {{formattedBalance}}",
@@ -3094,8 +3094,8 @@
         "expirable_amounts_label": "סכומים שפג תוקפם"
       },
       "payment_details": {
-        "close_payment_modal": "לִסְגוֹר",
-        "edit_payment_method_button": "לַעֲרוֹך",
+        "close_payment_modal": "לסגור",
+        "edit_payment_method_button": "לערוך",
         "default_checkbox": "הגדר כברירת מחדל",
         "title": "פרטי אמצעי התשלום",
         "credit_card_details_accessibility_label": "מסתיים ב {{lastDigits}}",
@@ -3120,8 +3120,8 @@
         "billing_title": "כתובת לחיוב"
       },
       "edit_payment_method": {
-        "save_payment_method_button": "לְהַצִיל",
-        "cancel_edit_payment_method_button": "לְבַטֵל",
+        "save_payment_method_button": "להציל",
+        "cancel_edit_payment_method_button": "לבטל",
         "billing_address_add_new": "הוסף חדש",
         "title": "עריכת אמצעי תשלום",
         "payment_method_updated_toast": "אמצעי התשלום עודכן",
@@ -3163,7 +3163,7 @@
       "edit_payment_method_brand_button_accessibility_label": "עריכת {{paymentMethodName}}",
       "delete_payment_method_button_accessibility_label": "מחק את {{paymentMethodName}}",
       "back_button_accessibility_label": "חזרה אל {{paymentMethodStepTitle}}",
-      "generic_card": "כַּרְטִיס",
+      "generic_card": "כרטיס",
       "expiration_warning_button_accessibility_label": "הצג אזהרת תפוגה עבור {{paymentMethodName}} המסתיים ב {{lastDigits}}",
       "expires_soon": "תוקף הכרטיס הזה עומד לפוג בקרוב",
       "expired": "כרטיס זה פג תוקפו",
@@ -3196,14 +3196,14 @@
       "add_payment_method_button": "הוסף אמצעי תשלום"
     },
     "payment_method_brands": {
-      "visa": "וִיזָה",
+      "visa": "ויזה",
       "mastercard": "מאסטרקארד",
-      "americanexpress": "אָמֶרִיקָן אֶקספּרֶס",
-      "discover": "לְגַלוֹת",
+      "americanexpress": "אמריקן אקספרס",
+      "discover": "לגלות",
       "dinersclub": "דיינרס קלאב",
       "elo": "אלו",
       "visaelectron": "ויזה אלקטרון",
-      "maestro": "מָאֵסטרוֹ",
+      "maestro": "מאסטרו",
       "forbrugsforeningen": "איגוד הצרכנים",
       "dankort": "דנקורט",
       "hipercard": "היפרקארד",
@@ -3214,7 +3214,7 @@
       "googlepay": "גוגל פיי",
       "paypal": "פייפאל",
       "storecredit": "אשראי בחנות",
-      "bogus": "מְזוּיָף"
+      "bogus": "מזויף"
     },
     "privacy_banner": {
       "cookie_preferences_link": "העדפות קובצי Cookie"
@@ -3229,40 +3229,40 @@
       "terms_of_service": "תנאי השירות"
     },
     "ui_components": {
-      "clear": "בָּרוּר",
-      "clipboardCopied": "מוּעֲתָק",
+      "clear": "ברור",
+      "clipboardCopied": "מועתק",
       "clipboardFailedToCopy": "ההעתקה נכשלה",
-      "closeNotification": "לִסְגוֹר",
+      "closeNotification": "לסגור",
       "expandNotification": "הצג עוד",
-      "closeModal": "לִסְגוֹר",
-      "submit": "לְהַגִישׁ",
+      "closeModal": "לסגור",
+      "submit": "להגיש",
       "processing": "עיבוד...",
       "increase": "הגדלת {{type}}",
       "decrease": "הקטן {{type}}",
       "minimumReached": "מינימום של {{value}} הושג",
       "maximumReached": "הגעת למקסימום של {{value}}",
-      "january": "יָנוּאָר",
-      "february": "פֶבּרוּאָר",
-      "march": "מַרס",
-      "april": "אַפּרִיל",
-      "may": "מַאִי",
-      "june": "יוּנִי",
-      "july": "יוּלִי",
-      "august": "אוֹגוּסט",
-      "september": "סֶפּטֶמבֶּר",
-      "october": "אוֹקְטוֹבֶּר",
-      "november": "נוֹבֶמבֶּר",
-      "december": "דֵצֶמבֶּר",
-      "monday": "יוֹם שֵׁנִי",
-      "tuesday": "יוֹם שְׁלִישִׁי",
-      "wednesday": "יוֹם רְבִיעִי",
-      "thursday": "יוֹם חֲמִישִׁי",
-      "friday": "יוֹם שִׁישִׁי",
-      "saturday": "שַׁבָּת",
-      "sunday": "יוֹם רִאשׁוֹן",
+      "january": "ינואר",
+      "february": "פברואר",
+      "march": "מרס",
+      "april": "אפריל",
+      "may": "מאי",
+      "june": "יוני",
+      "july": "יולי",
+      "august": "אוגוסט",
+      "september": "ספטמבר",
+      "october": "אוקטובר",
+      "november": "נובמבר",
+      "december": "דצמבר",
+      "monday": "יום שני",
+      "tuesday": "יום שלישי",
+      "wednesday": "יום רביעי",
+      "thursday": "יום חמישי",
+      "friday": "יום שישי",
+      "saturday": "שבת",
+      "sunday": "יום ראשון",
       "mondayAbbreviation": "מו",
       "tuesdayAbbreviation": "טו",
-      "wednesdayAbbreviation": "אָנוּ",
+      "wednesdayAbbreviation": "אנו",
       "thursdayAbbreviation": "ה'",
       "fridayAbbreviation": "פר",
       "saturdayAbbreviation": "סא",
@@ -3279,14 +3279,14 @@
       "removeItem": "הסר את {{label}}",
       "removeTag": "הסר תגית",
       "month": {
-        "one": "חוֹדֶשׁ",
+        "one": "חודש",
         "other": "חודשים"
       },
       "mapClusterTitle": {
         "one": "אשכול של סמן {{number}}",
         "other": "אשכול של סמנים {{number}}"
       },
-      "expandSheet": "לְהַרְחִיב",
+      "expandSheet": "להרחיב",
       "qrCode": "קוד QR",
       "addFile": "הוסף קובץ",
       "dropzoneInvalidFileType": "סוג הקובץ אינו נתמך",
@@ -3312,7 +3312,7 @@
         "remove": "הסר את התוסף",
         "move_down_tooltip": "מעבר למיקום הבא",
         "move_up_tooltip": "מעבר למיקום הקודם",
-        "remove_tooltip": "לְהַסִיר"
+        "remove_tooltip": "להסיר"
       }
     },
     "editor": {
@@ -3332,8 +3332,8 @@
       "title": "מבצעים בלעדיים מחנות",
       "subtitle": "זמין לזמן מוגבל",
       "button": "גלה בחנות",
-      "previous_button": "קוֹדֵם",
-      "next_button": "הַבָּא"
+      "previous_button": "קודם",
+      "next_button": "הבא"
     },
     "knowledge_base": {
       "self_serve_returns": {
@@ -3343,28 +3343,28 @@
     },
     "addresses": {
       "add_button": "הוסף כתובת",
-      "add_button_text": "לְהוֹסִיף",
+      "add_button_text": "להוסיף",
       "add_button_accessibility_label": "הוסף כתובת",
-      "back_button": "בְּחֲזָרָה",
+      "back_button": "בחזרה",
       "back_button_accessibility_label": "חזרה לעריכת כתובת {{address}}",
       "add_address_banner": "הוסף כתובות לשימוש בקופה",
       "no_addresses_banner": "לא נוספו כתובות",
       "address_deleted_notification": "הכתובת נמחקה",
       "cancel_adding_address_accessibility_label": "ביטול הוספת כתובת",
-      "cancel_deletion_button": "לְבַטֵל",
+      "cancel_deletion_button": "לבטל",
       "cancel_deletion_button_accessibility_label": "ביטול מחיקת {{address}}",
       "default_address": {
         "title": "כתובת ברירת מחדל",
         "title_accessibility_label": "כתובת ברירת מחדל: {{address}}"
       },
-      "delete_button": "לִמְחוֹק",
+      "delete_button": "למחוק",
       "delete_button_accessibility_label": "מחק את {{address}}",
       "delete_confirmation_button": "מחיקת כתובת",
       "delete_confirmation_button_accessibility_label": "מחק את {{address}}",
       "delete_confirmation_message": "למחוק כתובת? הזמנות קיימות אינן מושפעות.",
       "delete_confirmation_title": "למחוק כתובת?",
       "delete_confirmation_description": "הזמנות קיימות אינן מושפעות.",
-      "edit_button": "לַעֲרוֹך",
+      "edit_button": "לערוך",
       "edit_button_accessibility_label": "עריכת {{address}}",
       "edit_section_accessibility_label": "עריכת {{address}}",
       "edit_modal_title": {
@@ -3386,13 +3386,13 @@
       "billing_address_dropdown_placeholder": "כתובת לחיוב"
     },
     "address_form": {
-      "attention": "תְשׁוּמַת לֵב",
+      "attention": "תשומת לב",
       "attention_company": "חברה/תשומת לב",
       "attention_help_text": "שם של אדם או מחלקה",
       "auto_complete_close_accessibility_label": "סגור הצעות",
       "auto_complete_title": "הצעות",
       "billing_address": "השתמש ככתובת לחיוב",
-      "cancel": "לְבַטֵל",
+      "cancel": "לבטל",
       "cancel_accessibility_label": "ביטול עריכת כתובת {{address}}",
       "creation_success_notification": "כתובת שנוספה",
       "default_address": "זוהי כתובת ברירת המחדל שלי",
@@ -3402,7 +3402,7 @@
       "loading_edit_form_accessibility_message": "טוען את טופס עריכת הכתובת",
       "loading_form_accessibility_message": "טוען את טופס הכתובת",
       "loading_finished_accessibility_message": "טופס הכתובת נטען",
-      "save": "לְהַצִיל",
+      "save": "להציל",
       "save_accessibility_label": "שמור כתובת {{address}}",
       "section_title_accessibility_label": "הוסף כתובת",
       "update_success_notification": "הכתובת עודכנה"
@@ -3423,8 +3423,8 @@
           "six_products_accessibility_label": "ההזמנה כוללת כמות של {{lineItemName1}} {{lineItemQuantity1}} , כמות של {{lineItemQuantity2}} {{lineItemName2}} {{lineItemName3}} {{lineItemQuantity3}} {{lineItemName4}} , כמות של {{lineItemQuantity4}} , כמות של { {{lineItemName5}} {{lineItemQuantity5}} {{lineItemName6}} }, כמות של {{lineItemQuantity6}}",
           "six_and_more_products_accessibility_label": "ההזמנה כוללת כמות של {{lineItemName1}} {{lineItemQuantity1}} , כמות של {{lineItemQuantity2}} {{lineItemName2}} {{lineItemName3}} {{lineItemQuantity3}} {{lineItemName4}} , כמות של {{lineItemQuantity4}} , כמות של {{lineItemName5}} {{lineItemName6}} {{lineItemQuantity5}} , כמות של {{lineItemQuantity6}} ועוד.",
           "view_order_details": "הצג פרטי הזמנה",
-          "previous": "קוֹדֵם",
-          "next": "הַבָּא"
+          "previous": "קודם",
+          "next": "הבא"
         },
         "items": {
           "one": "פריט {{count}}",
@@ -3434,10 +3434,10 @@
         "no_filtered_results_title": "אין תוצאות מסוננות",
         "order_link": "הצג הזמנה {{name}}",
         "order_number": "הזמנה {{name}}",
-        "orders_title": "מְאוּשָׁר",
+        "orders_title": "מאושר",
         "pagination": {
           "nav_accessibility_label": "כפתורי ניווט להזמנות",
-          "next": "הַבָּא",
+          "next": "הבא",
           "next_accessibility_label": "הזמנות הבאות",
           "previous": "קודם",
           "previous_accessibility_label": "הזמנות קודמות",
@@ -3479,7 +3479,7 @@
         "sort_hide_options_accessibility_label": "הסתר אפשרויות מיון עבור הזמנות שאושרו.",
         "sort_show_options_accessibility_label": "הצג אפשרויות מיון עבור הזמנות שאושרו.",
         "sort_currently_sorted_by_accessibility_label": "ממוין כעת לפי: {{option}}",
-        "sort_title": "סוּג",
+        "sort_title": "סוג",
         "sort": {
           "date": {
             "newest": "מהחדש ביותר לישן ביותר",
@@ -3503,27 +3503,27 @@
           "current_location": "מיקום נוכחי",
           "switch_view": "החלפת תצוגה"
         },
-        "filter_title": "לְסַנֵן",
+        "filter_title": "לסנן",
         "filter": {
           "clear_section": "נקה את הקטע",
           "clear_all": "נקה הכל",
-          "apply": "לִפְנוֹת",
+          "apply": "לפנות",
           "date": {
             "start_date": "תאריך התחלה",
             "end_date": "תאריך סיום",
             "title": "תאריך הזמנה",
-            "today": "הַיוֹם",
+            "today": "היום",
             "last_7_days": "7 הימים האחרונים",
             "last_30_days": "30 הימים האחרונים",
             "last_90_days": "90 הימים האחרונים",
             "last_365_days": "12 החודשים האחרונים",
-            "custom": "מִנְהָג"
+            "custom": "מנהג"
           }
         },
         "show_order_actions_accessibility_label": "הצג פעולות הזמנה עבור הזמנה {{name}}",
         "column_headers": {
-          "order": "לְהַזמִין",
-          "total": "סַך הַכֹּל",
+          "order": "להזמין",
+          "total": "סך הכל",
           "actions_accessibility_label": "פעולות",
           "products_accessibility_label": "מוצרים"
         },
@@ -3555,17 +3555,17 @@
         "picked_up_label": "נאסף",
         "picked_up_description": "פריטים אלה נאספו.",
         "canceled_description": "ההזמנה שלך בוטלה בתאריך {{date}} .",
-        "canceled_label": "בּוּטלָה",
+        "canceled_label": "בוטלה",
         "canceled_title": "ההזמנה שלך בוטלה",
         "come_back": "חזור לדף זה לקבלת עדכונים על סטטוס המשלוח שלך.",
         "company_tracking_number": "מספר מעקב של {{company}} :",
-        "confirmed_label": "מְאוּשָׁר",
+        "confirmed_label": "מאושר",
         "confirmed_title": "ההזמנה שלך אושרה",
         "confirmed_description_pickup": "תקבלו אימייל כאשר ההזמנה שלכם תהיה מוכנה לאיסוף.",
         "confirmed_description_digital": "תקבלו אימייל כאשר ההזמנה שלכם תהיה מוכנה.",
         "confirmed_description_gift_card_text": "תקבלו הודעת טקסט כאשר ההזמנה שלכם תהיה מוכנה.",
         "delivered_description": "משלוח זה סופק.",
-        "complete_label": "לְהַשְׁלִים",
+        "complete_label": "להשלים",
         "delivered_label": "נמסר",
         "delivered_title": "המשלוח שלך נמסר",
         "delivered_description_digital": {
@@ -3709,7 +3709,7 @@
       "fulfillment_status_title": "סטטוס אספקה: {{status}}",
       "buy_again": "קנה שוב",
       "buy_again_accessibility_label": "קנה שוב עבור הזמנה {{orderId}}",
-      "manage": "לְנַהֵל",
+      "manage": "לנהל",
       "manage_accessiblity_label": "ניהול הזמנה {{orderId}}"
     },
     "date": {
@@ -3718,7 +3718,7 @@
           "one": "לפני {{count}}",
           "other": "לפני {{count}} דקות"
         },
-        "lessThanOneMinuteAgo": "זֶה עַתָה",
+        "lessThanOneMinuteAgo": "זה עתה",
         "yesterday": "אתמול בשעה {{time}}",
         "today": "היום בשעה {{time}}",
         "tomorrow": "מחר בשעה {{time}}"
@@ -3728,7 +3728,7 @@
     "navigation_and_structure": {
       "account_menu": {
         "hide_accessibility_label": "הסתר חשבון בתפריט",
-        "label": "חֶשְׁבּוֹן",
+        "label": "חשבון",
         "show_accessibility_label": "הצג תפריט חשבון",
         "nav_accessibility_label": "ניווט בחשבון",
         "open_menu_accessibility_label": "ניווט פתיחת חשבון",
@@ -3740,13 +3740,13 @@
       "contact_email_subject": "איש קשר מחנות המקוונת של {{shopName}}",
       "contact_link": "פרטי קשר",
       "delete_confirmation": {
-        "cancel": "לְבַטֵל",
-        "delete": "לִמְחוֹק"
+        "cancel": "לבטל",
+        "delete": "למחוק"
       },
-      "dismiss_toast": "לְפַטֵר",
+      "dismiss_toast": "לפטר",
       "document_title": "{{sectionName}} - {{shopName}} - חשבון",
       "go_to_store_link": "לך לחנות",
-      "loading_message": "טְעִינָה",
+      "loading_message": "טעינה",
       "log_out_link": "התנתק",
       "logout_overlay_label": "מנתק אותך...",
       "nav_label_accessibility_label": "ניווט ראשי",
@@ -3765,26 +3765,26 @@
       "try_new_search": "נסה חיפוש חדש",
       "view_details": "הצג פרטים",
       "company_location": "מיקום החברה",
-      "search": "לְחַפֵּשׂ",
+      "search": "לחפש",
       "skip_to_content": "דלג לתוכן"
     },
     "account_information": {
       "loading_accessibility_message": "טוען פרטי חשבון",
       "loading_finished_accessibility_message": "פרטי החשבון נטענו",
       "profile_card": {
-        "cancel": "לְבַטֵל",
+        "cancel": "לבטל",
         "cancel_accessibility_label": "ביטול עריכת הפרופיל",
-        "edit": "לַעֲרוֹך",
+        "edit": "לערוך",
         "edit_accessibility_label": "עריכת פרופיל",
         "email_help_text": "לא ניתן לשנות את כתובת האימייל המשמשת להתחברות",
-        "first_name": "שֵׁם פְּרַטִי",
-        "last_name": "שֵׁם מִשׁפָּחָה",
-        "email": "אֶלֶקטרוֹנִי",
+        "first_name": "שם פרטי",
+        "last_name": "שם משפחה",
+        "email": "אלקטרוני",
         "no_name_provided_accessibility_label": "לא נוסף שם",
         "phone_number_help_text": "לא ניתן לשנות את מספר הטלפון ששימש להתחברות",
-        "save": "לְהַצִיל",
+        "save": "להציל",
         "save_accessibility_label": "שמור פרופיל",
-        "title": "פּרוֹפִיל"
+        "title": "פרופיל"
       },
       "verify_new_email_modal": {
         "title": "אימות כתובת דוא\"ל",
@@ -3792,9 +3792,9 @@
         "one_time_password_label": "קוד בן 6 ספרות",
         "email_resend_button": "שלח שוב את הקוד",
         "email_resend_button_accessibility_label": "שלח שוב את קוד האימות",
-        "verify_button": "לְאַמֵת",
+        "verify_button": "לאמת",
         "verify_button_accessibility_label": "אימות סיסמה חד פעמית",
-        "cancel_button": "לְבַטֵל",
+        "cancel_button": "לבטל",
         "cancel_button_accessibility_label": "ביטול עריכת אימייל"
       },
       "email_update_success_modal": {
@@ -3802,7 +3802,7 @@
         "description": "האימייל עודכן בהצלחה. מפנה מחדש להתחברות."
       },
       "profile_update_confirmation_message": "הפרופיל עודכן",
-      "title": "פּרוֹפִיל",
+      "title": "פרופיל",
       "people": {
         "pagination": {
           "load_more": "טען עוד",
@@ -3810,7 +3810,7 @@
           "loading_accessibility_label": "טוען אנשים"
         }
       },
-      "add_button": "לְהוֹסִיף"
+      "add_button": "להוסיף"
     },
     "B2B": {
       "draft_order_details": {
@@ -3898,31 +3898,31 @@
         "add_accessibility_label": "הוסף מספר הזמנה",
         "add_modal_title": "הוסף מספר הזמנה",
         "close_modal_accessibility_label": "סגירת מספר הזמנה מודאלי",
-        "discard": "לְהַשְׁלִיך",
+        "discard": "להשליך",
         "discard_changes_modal_title": "למחוק את השינויים?",
         "edit_accessibility_label": "עריכת מספר הזמנת רכש",
         "edit_modal_title": "עריכת מספר הזמנת רכש",
         "empty_state": "אין מספר הזמנה",
         "modal_po_number_input_max_length_error": "מספרי הזמנת רכש מכילים מקסימום {{maxLength}} תווים.",
         "title": "מספר הזמנה {{poNumber}}",
-        "cancel": "לְבַטֵל",
-        "save": "לְהַצִיל",
+        "cancel": "לבטל",
+        "save": "להציל",
         "modal_po_number_input_label": "מספר הזמנת רכש"
       },
       "account_information": {
-        "company_card_section_accessibility_label": "חֶברָה",
+        "company_card_section_accessibility_label": "חברה",
         "company_card_name_label": "שם החברה"
       },
       "locations": {
-        "contact_email": "אֶלֶקטרוֹנִי",
-        "contact_list_title": "אֲנָשִׁים",
-        "contact_name": "שֵׁם",
-        "own_role_contact_name": "אַתָה",
-        "section_title": "מִקוּם",
+        "contact_email": "אלקטרוני",
+        "contact_list_title": "אנשים",
+        "contact_name": "שם",
+        "own_role_contact_name": "אתה",
+        "section_title": "מקום",
         "tax_id": "מספר זיהוי מס",
         "multiple_tax_exemptions_and": "ו",
-        "tax_exemptions_modal_close": "לִסְגוֹר",
-        "taxes_none": "אַף לֹא אֶחָד",
+        "tax_exemptions_modal_close": "לסגור",
+        "taxes_none": "אף לא אחד",
         "tax_exemption_not_applicable": "לא רלוונטי",
         "contact_permissions": "הרשאות",
         "contact_phone_number": "מספר טלפון",
@@ -3944,8 +3944,8 @@
         "tax_exemptions_modal_button_accessibility_label": "הצג את כל הפטורים ממס"
       },
       "location_selection": {
-        "selection_cancel_button": "לְבַטֵל",
-        "selection_continue_button": "לְהַמשִׁיך",
+        "selection_cancel_button": "לבטל",
+        "selection_continue_button": "להמשיך",
         "list_accessibility_label": "רשימת מיקומים",
         "loading_store_accessibility_message": "הולך לחנות",
         "clear_search": "נקה חיפוש",
@@ -3964,16 +3964,16 @@
       "orders": {
         "draft_order_list": {
           "hide_all": "הסתר הכל",
-          "title": "תָלוּי וְעוֹמֵד",
+          "title": "תלוי ועומד",
           "show_all": "הצג הכל",
           "pending_orders_count_more_than_pagination_length": "{{count}} +",
           "pending_tab_accessibility_label": {
             "more_than_pagination_length": "יש לך יותר מ- {{count}} הזמנות ממתינות"
           }
         },
-        "order_list_column_headers_contact": "מַגָע",
-        "order_list_column_headers_status": "סטָטוּס",
-        "order_list_column_headers_location": "מִקוּם",
+        "order_list_column_headers_contact": "מגע",
+        "order_list_column_headers_status": "סטטוס",
+        "order_list_column_headers_location": "מקום",
         "removed_company_contact_tooltip": "הוסר מהחברה"
       },
       "addresses": {
@@ -4005,7 +4005,7 @@
         "description": "אירעה בעיה בעדכון הכתובת שלך. נסה לרענן דף זה או לבדוק את חיבור האינטרנט שלך."
       },
       "load_extension_error": {
-        "title": "שְׁגִיאָה",
+        "title": "שגיאה",
         "description": "רענן דף זה או נסה שוב בעוד מספר דקות.",
         "refresh_button": "רענן את הדף"
       },
@@ -4048,10 +4048,10 @@
   },
   "general": {
     "password_page": {
-      "login_form_password_label": "סִיסמָה",
+      "login_form_password_label": "סיסמה",
       "login_form_password_placeholder": "הסיסמה שלך",
       "login_form_error": "סיסמה שגויה!",
-      "login_form_submit": "לְהַכנִיס",
+      "login_form_submit": "להכניס",
       "admin_link_html": "האם אתה בעל החנות? <a href=\"/admin\" class=\"link underlined-link\">התחבר כאן</a>",
       "powered_by_shopify_html": "חנות זו תופעל על ידי {{ shopify }}",
       "login_form_heading": "היכנסו לחנות באמצעות סיסמה:",
@@ -4076,14 +4076,14 @@
     },
     "continue_shopping": "המשך קניות",
     "pagination": {
-      "label": "דִפּוּף",
+      "label": "דפוף",
       "page": "עמוד {{ number }}",
       "next": "עמוד הבא",
       "previous": "עמוד קודם"
     },
     "search": {
       "reset": "נקה מונח חיפוש",
-      "search": "לְחַפֵּשׂ"
+      "search": "לחפש"
     },
     "cart": {
       "view": "הצג עגלה ( {{ count }} )",
@@ -4093,34 +4093,34 @@
     "share": {
       "close": "סגור שיתוף",
       "copy_to_clipboard": "העתקת קישור",
-      "share_url": "לְקַשֵׁר",
+      "share_url": "לקשר",
       "success_message": "קישור שהועתק ללוח"
     },
     "slider": {
-      "of": "שֶׁל",
+      "of": "של",
       "next_slide": "החלקה ימינה",
       "previous_slide": "החלק שמאלה",
       "name": "סליידר"
     }
   },
   "newsletter": {
-    "label": "אֶלֶקטרוֹנִי",
+    "label": "אלקטרוני",
     "success": "תודה על ההרשמה",
     "button_label": "הירשם"
   },
   "accessibility": {
     "skip_to_text": "דלג לתוכן",
     "skip_to_product_info": "דלג למידע על המוצר",
-    "close": "לִסְגוֹר",
-    "unit_price_separator": "לְכָל",
-    "vendor": "מוֹכֵר:",
-    "error": "שְׁגִיאָה",
+    "close": "לסגור",
+    "unit_price_separator": "לכל",
+    "vendor": "מוכר:",
+    "error": "שגיאה",
     "refresh_page": "בחירת אפשרות גורמת לרענון מלא של הדף.",
     "link_messages": {
       "new_window": "נפתח בחלון חדש.",
       "external": "פותח אתר אינטרנט חיצוני."
     },
-    "loading": "טְעִינָה...",
+    "loading": "טעינה...",
     "total_reviews": "סך כל הביקורות",
     "star_reviews_info": "{{ rating_value }} מתוך {{ rating_max }} כוכבים",
     "collapsible_content_title": "תוכן מתקפל",
@@ -4136,9 +4136,9 @@
       },
       "moderated": "שימו לב, יש לאשר תגובות לפני פרסומן.",
       "comment_form_title": "השאר תגובה",
-      "name": "שֵׁם",
-      "email": "אֶלֶקטרוֹנִי",
-      "message": "הֶעָרָה",
+      "name": "שם",
+      "email": "אלקטרוני",
+      "message": "הערה",
       "post": "פרסם תגובה",
       "back_to_blog": "חזרה לבלוג",
       "share": "שתף מאמר זה",
@@ -4155,15 +4155,15 @@
       "add_to_cart": "הוסף לעגלה",
       "choose_options": "בחר אפשרויות",
       "choose_product_options": "בחר אפשרויות עבור {{ product_name }}",
-      "description": "תֵאוּר",
-      "inventory_in_stock": "בִּמלַאִי",
+      "description": "תאור",
+      "inventory_in_stock": "במלאי",
       "inventory_in_stock_show_count": "{{ quantity }} במלאי",
       "inventory_low_stock": "מלאי נמוך",
       "inventory_low_stock_show_count": "מלאי נמוך: נותרו {{ quantity }}",
       "inventory_out_of_stock": "אזל מהמלאי",
-      "inventory_out_of_stock_continue_selling": "בִּמלַאִי",
+      "inventory_out_of_stock_continue_selling": "במלאי",
       "sku": "מק\"ט",
-      "on_sale": "מְכִירָה",
+      "on_sale": "מכירה",
       "product_variants": "גרסאות מוצר",
       "media": {
         "gallery_viewer": "מציג גלריה",
@@ -4176,7 +4176,7 @@
         "play_video": "הפעלת וידאו"
       },
       "quantity": {
-        "label": "כַּמוּת",
+        "label": "כמות",
         "input_label": "כמות עבור {{ product }}",
         "increase": "הגדלת כמות עבור {{ product }}",
         "decrease": "הקטנת כמות עבור {{ product }}",
@@ -4189,13 +4189,13 @@
         "note": "הצג כללי כמות"
       },
       "pickup_availability": {
-        "refresh": "לְרַעֲנֵן",
+        "refresh": "לרענן",
         "view_store_info": "הצג מידע על החנות",
         "pick_up_available": "איסוף זמין",
         "pick_up_available_at_html": "איסוף זמין בכתובת <span class=\"color-foreground\">{{ location_name }}</span>",
         "pick_up_unavailable_at_html": "איסוף אינו זמין כרגע ב <span class=\"color-foreground\">{{ location_name }}</span>"
       },
-      "vendor": "מוֹכֵר",
+      "vendor": "מוכר",
       "volume_pricing": {
         "title": "תמחור נפחי",
         "note": "תמחור כמות זמין",
@@ -4208,7 +4208,7 @@
         "unit_price": "מחיר ליחידה",
         "from_price_html": "החל מ {{ price }}"
       },
-      "sold_out": "הַכַּרטִיסִים אָזלוּ",
+      "sold_out": "הכרטיסים אזלו",
       "unavailable": "לא זמין",
       "video_exit_message": "{{ title }} פותח סרטון במסך מלא באותו חלון.",
       "xr_button_label": "צפה במרחב שלך, טוען פריט בחלון מציאות רבודה",
@@ -4220,14 +4220,14 @@
       "duties_included": "כולל חובות."
     },
     "facets": {
-      "apply": "לִפְנוֹת",
-      "clear": "בָּרוּר",
-      "from": "מִן",
-      "filter_by_label": "לְסַנֵן:",
-      "filter_button": "לְסַנֵן",
-      "reset": "אִתחוּל",
-      "sort_button": "סוּג",
-      "to": "אֶל",
+      "apply": "לפנות",
+      "clear": "ברור",
+      "from": "מן",
+      "filter_by_label": "לסנן:",
+      "filter_button": "לסנן",
+      "reset": "אתחול",
+      "sort_button": "סוג",
+      "to": "אל",
       "filter_and_operator_subtitle": "התאם את כולם",
       "clear_all": "הסר הכל",
       "show_more": "הצג עוד",
@@ -4258,12 +4258,12 @@
       "previous_announcement": "הודעה קודמת",
       "next_announcement": "ההכרזה הבאה",
       "carousel": "קרוסלה",
-      "announcement": "הַכרָזָה",
+      "announcement": "הכרזה",
       "announcement_bar": "סרגל ההכרזות"
     },
     "header": {
-      "announcement": "הַכרָזָה",
-      "menu": "תַפרִיט",
+      "announcement": "הכרזה",
+      "menu": "תפריט",
       "cart_count": {
         "one": "פריט {{ count }}",
         "other": "{{ count }}"
@@ -4289,13 +4289,13 @@
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "מיסים, הנחות <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">ומשלוח</a> מחושבים בקופה.",
       "taxes_at_checkout_shipping_at_checkout_without_policy": "מיסים, הנחות ומשלוח מחושבים בקופה.",
       "headings": {
-        "product": "מוּצָר",
-        "total": "סַך הַכֹּל",
-        "quantity": "כַּמוּת",
+        "product": "מוצר",
+        "total": "סך הכל",
+        "quantity": "כמות",
         "image": "תמונת מוצר",
-        "price": "מְחִיר"
+        "price": "מחיר"
       },
-      "update": "לְעַדְכֵּן",
+      "update": "לעדכן",
       "login": {
         "title": "יש לך חשבון?",
         "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">התחבר</a> כדי לבצע תשלום מהיר יותר."
@@ -4318,7 +4318,7 @@
     },
     "collection_template": {
       "empty": "לא נמצאו מוצרים",
-      "title": "גְבִיָה",
+      "title": "גביה",
       "use_fewer_filters_html": "השתמש בפחות מסננים או <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">הסר את כולם</a>"
     },
     "video": {
@@ -4331,7 +4331,7 @@
       "pause_slideshow": "השהיית מצגת",
       "play_slideshow": "הפעלת מצגות",
       "carousel": "קרוסלה",
-      "slide": "לְהַחלִיק"
+      "slide": "להחליק"
     },
     "page": {
       "title": "כותרת העמוד"
@@ -4340,8 +4340,8 @@
       "product_total": "סכום ביניים של המוצר",
       "view_cart": "הצג עגלה",
       "each": "{{ money }} /ליחידה",
-      "product": "מוּצָר",
-      "variant": "גִרְסָה אַחֶרֶת",
+      "product": "מוצר",
+      "variant": "גרסה אחרת",
       "variant_total": "סך כל הוריאנטים",
       "items_added": {
         "one": "פריט {{ quantity }} נוסף",
@@ -4356,7 +4356,7 @@
       "remove_all_single_item_confirmation": "להסיר פריט אחד מהעגלה שלך?",
       "remove_all_items_confirmation": "להסיר את כל {{ quantity }} הפריטים מעגלת הקניות שלך?",
       "remove_all": "הסר הכל",
-      "cancel": "לְבַטֵל",
+      "cancel": "לבטל",
       "min_error": "לפריט זה יש מינימום של {{ min }}",
       "max_error": "לפריט זה יש מקסימום של {{ max }}",
       "step_error": "ניתן להוסיף פריט זה רק במרווחים של {{ step }}"
@@ -4365,41 +4365,41 @@
   "customer": {
     "addresses": {
       "edit_address": "עריכת כתובת",
-      "first_name": "שֵׁם פְּרַטִי",
-      "last_name": "שֵׁם מִשׁפָּחָה",
-      "company": "חֶברָה",
+      "first_name": "שם פרטי",
+      "last_name": "שם משפחה",
+      "company": "חברה",
       "address1": "כתובת 1",
       "address2": "כתובת 2",
-      "city": "עִיר",
+      "city": "עיר",
       "country": "מדינה/אזור",
-      "province": "מָחוֹז",
+      "province": "מחוז",
       "zip": "מיקוד",
-      "phone": "טֵלֵפוֹן",
+      "phone": "טלפון",
       "set_default": "הגדר ככתובת ברירת מחדל",
       "add": "הוסף כתובת",
       "update": "עדכון כתובת",
-      "cancel": "לְבַטֵל",
-      "edit": "לַעֲרוֹך",
-      "delete": "לִמְחוֹק",
+      "cancel": "לבטל",
+      "edit": "לערוך",
+      "delete": "למחוק",
       "delete_confirm": "האם אתה בטוח שברצונך למחוק את הכתובת הזו?",
-      "default": "בְּרִירַת מֶחדָל",
+      "default": "ברירת מחדל",
       "title": "כתובות",
       "add_new": "הוסף כתובת חדשה"
     },
     "log_in": "התחברות",
     "log_out": "התנתק",
     "login_page": {
-      "cancel": "לְבַטֵל",
+      "cancel": "לבטל",
       "create_account": "צור חשבון",
-      "email": "אֶלֶקטרוֹנִי",
+      "email": "אלקטרוני",
       "forgot_password": "שכחת את הסיסמה שלך?",
-      "guest_continue": "לְהַמשִׁיך",
+      "guest_continue": "להמשיך",
       "guest_title": "המשך כאורח",
-      "password": "סִיסמָה",
-      "title": "כְּנִיסָה לַמַעֲרֶכֶת",
+      "password": "סיסמה",
+      "title": "כניסה למערכת",
       "sign_in": "כניסה",
-      "submit": "לְהַגִישׁ",
-      "alternate_provider_separator": "אוֹ"
+      "submit": "להגיש",
+      "alternate_provider_separator": "או"
     },
     "order": {
       "title": "הזמנה {{ name }}",
@@ -4410,31 +4410,31 @@
       "payment_status": "סטטוס תשלום",
       "shipping_address": "כתובת למשלוח",
       "fulfillment_status": "סטטוס אספקה",
-      "discount": "דִיסקוֹנט",
-      "shipping": "מִשׁלוֹחַ",
-      "tax": "מַס",
-      "product": "מוּצָר",
+      "discount": "דיסקונט",
+      "shipping": "משלוח",
+      "tax": "מס",
+      "product": "מוצר",
       "sku": "מק\"ט",
-      "quantity": "כַּמוּת",
-      "total": "סַך הַכֹּל",
+      "quantity": "כמות",
+      "total": "סך הכל",
       "total_refunded": "החזר כספי",
       "fulfilled_at_html": "מולא בתאריך {{ date }}",
       "track_shipment": "מעקב אחר משלוח",
       "tracking_url": "קישור מעקב",
-      "tracking_company": "מוֹבִיל",
+      "tracking_company": "מוביל",
       "tracking_number": "מספר מעקב",
       "subtotal": "סכום ביניים",
       "total_duties": "חובות",
-      "price": "מְחִיר"
+      "price": "מחיר"
     },
     "orders": {
       "title": "היסטוריית הזמנות",
-      "order_number": "לְהַזמִין",
+      "order_number": "להזמין",
       "order_number_link": "מספר הזמנה {{ number }}",
-      "date": "תַאֲרִיך",
+      "date": "תאריך",
       "payment_status": "סטטוס תשלום",
       "fulfillment_status": "סטטוס אספקה",
-      "total": "סַך הַכֹּל",
+      "total": "סך הכל",
       "none": "עדיין לא ביצעת הזמנות."
     },
     "recover_password": {
@@ -4444,27 +4444,27 @@
     },
     "register": {
       "title": "צור חשבון",
-      "first_name": "שֵׁם פְּרַטִי",
-      "last_name": "שֵׁם מִשׁפָּחָה",
-      "email": "אֶלֶקטרוֹנִי",
-      "password": "סִיסמָה",
-      "submit": "לִיצוֹר"
+      "first_name": "שם פרטי",
+      "last_name": "שם משפחה",
+      "email": "אלקטרוני",
+      "password": "סיסמה",
+      "submit": "ליצור"
     },
     "reset_password": {
       "title": "איפוס סיסמת חשבון",
       "subtext": "הזן סיסמה חדשה",
-      "password": "סִיסמָה",
+      "password": "סיסמה",
       "password_confirm": "אשר סיסמה",
       "submit": "איפוס סיסמה"
     },
     "account": {
-      "title": "חֶשְׁבּוֹן",
+      "title": "חשבון",
       "view_addresses": "הצג כתובות",
       "details": "פרטי חשבון"
     },
-    "account_fallback": "חֶשְׁבּוֹן",
+    "account_fallback": "חשבון",
     "activate_account": {
-      "password": "סִיסמָה",
+      "password": "סיסמה",
       "subtext": "צור את הסיסמה שלך כדי להפעיל את חשבונך.",
       "title": "הפעל חשבון",
       "password_confirm": "אשר סיסמה",
@@ -4494,11 +4494,11 @@
       "collapsed": "טופס מקבל כרטיס מתנה מכוסה",
       "email_label": "דוא\"ל הנמען",
       "email_label_optional_for_no_js_behavior": "כתובת דוא\"ל של הנמען (אופציונלי)",
-      "email": "אֶלֶקטרוֹנִי",
+      "email": "אלקטרוני",
       "name_label": "שם הנמען (אופציונלי)",
-      "name": "שֵׁם",
+      "name": "שם",
       "message_label": "הודעה (אופציונלי)",
-      "message": "הוֹדָעָה",
+      "message": "הודעה",
       "max_characters": "מספר תווים מקסימלי של {{ max_chars }}",
       "send_on": "שנה-חודש-יום",
       "send_on_label": "לשלוח (אופציונלי)"
@@ -4506,7 +4506,7 @@
   },
   "templates": {
     "search": {
-      "page": "עַמוּד",
+      "page": "עמוד",
       "pages": "דפים",
       "products": "מוצרים",
       "title": "תוצאות חיפוש",
@@ -4534,14 +4534,14 @@
       "no_results": "לא נמצאו תוצאות עבור \" {{ terms }} \". בדוק את האיות או השתמש במילה או בביטוי אחרים."
     },
     "cart": {
-      "cart": "עֲגָלָה"
+      "cart": "עגלה"
     },
     "contact": {
       "form": {
-        "name": "שֵׁם",
-        "email": "אֶלֶקטרוֹנִי",
-        "comment": "הֶעָרָה",
-        "send": "לִשְׁלוֹחַ",
+        "name": "שם",
+        "email": "אלקטרוני",
+        "comment": "הערה",
+        "send": "לשלוח",
         "title": "טופס יצירת קשר",
         "phone": "מספר טלפון",
         "post_success": "תודה שיצרת איתנו קשר. נחזור אליך בהקדם האפשרי."
@@ -4552,9 +4552,9 @@
     }
   },
   "localization": {
-    "search": "לְחַפֵּשׂ",
+    "search": "לחפש",
     "country_label": "מדינה/אזור",
-    "language_label": "שָׂפָה",
+    "language_label": "שפה",
     "update_language": "עדכון שפה",
     "update_country": "עדכון מדינה/אזור"
   }
