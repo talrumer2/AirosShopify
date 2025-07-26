@@ -1,0 +1,773 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #Banner-{{ section.id }} {
+    --banner-height: {{ section.settings.image_height }}%;
+    --banner-padding: {{ section.settings.banner_padding }}px;
+    --content-gap: {{ section.settings.content_gap }}px;
+    
+    /* Desktop Content Positioning */
+    --content-horizontal-desktop: {{ section.settings.content_horizontal_alignment_desktop }};
+    --content-vertical-desktop: {{ section.settings.content_vertical_alignment_desktop }};
+    
+    /* Mobile Content Positioning */
+    --content-horizontal-mobile: {{ section.settings.content_horizontal_alignment_mobile }};
+    --content-vertical-mobile: {{ section.settings.content_vertical_alignment_mobile }};
+    
+    /* Header Styling */
+    --header-color: {{ section.settings.header_color }};
+    --header-font-size: {{ section.settings.header_font_size }}px;
+    --header-font-weight: {{ section.settings.header_font_weight }};
+    --header-text-shadow: {{ section.settings.header_text_shadow }};
+    
+    /* Subheader Styling */
+    --subheader-color: {{ section.settings.subheader_color }};
+    --subheader-font-size: {{ section.settings.subheader_font_size }}px;
+    --subheader-font-weight: {{ section.settings.subheader_font_weight }};
+    --subheader-text-shadow: {{ section.settings.subheader_text_shadow }};
+    --subheader-bg-color: {% if section.settings.subheader_show_bg %}{{ section.settings.subheader_bg_color | color_modify: 'alpha', section.settings.subheader_bg_opacity }}{% else %}transparent{% endif %};
+    --subheader-border-radius: {{ section.settings.subheader_border_radius }}px;
+    
+    /* Button Styling */
+    --button-bg-color: {{ section.settings.button_bg_color }};
+    --button-text-color: {{ section.settings.button_text_color }};
+    --button-border-radius: {{ section.settings.button_border_radius }}px;
+    --button-font-size: {{ section.settings.button_font_size }}px;
+    --button-font-family: {{ section.settings.button_font_family }};
+    --button-font-weight: {{ section.settings.button_font_weight }};
+  }
+  
+  .banner-wrapper {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+    clip-path: inset(calc((100% - var(--banner-height)) / 2) 0);
+  }
+  
+  .desktop-only {
+    display: inline;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .desktop-only {
+      display: none;
+    }
+    
+    .mobile-only {
+      display: inline;
+    }
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    clip-path: inset(calc((100% - var(--banner-height)) / 2) 0);
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: calc((100% - var(--banner-height)) / 2);
+    left: 0;
+    right: 0;
+    height: var(--banner-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--content-vertical-desktop);
+    align-items: var(--content-horizontal-desktop);
+    text-align: center;
+    padding: var(--banner-padding);
+    z-index: 2;
+  }
+  
+  .banner-content__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--content-gap);
+    max-width: 100%;
+    align-items: center;
+  }
+  
+  .banner-content__header {
+    color: var(--header-color);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    text-shadow: var(--header-text-shadow);
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .banner-content__subheader {
+    color: var(--subheader-color);
+    font-size: var(--subheader-font-size);
+    font-weight: var(--subheader-font-weight);
+    text-shadow: var(--subheader-text-shadow);
+    background-color: var(--subheader-bg-color);
+    border-radius: var(--subheader-border-radius);
+    padding: 0px 6px;
+    margin: 0;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .banner-content__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .banner-button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-border-radius);
+    font-size: var(--button-font-size);
+    font-family: var(--button-font-family);
+    font-weight: var(--button-font-weight);
+    padding: 12px 24px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .banner-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  /* Desktop Horizontal Alignment Classes */
+  .banner-content--desktop-left {
+    text-align: left;
+  }
+  
+  .banner-content--desktop-center {
+    text-align: center;
+  }
+  
+  .banner-content--desktop-right {
+    text-align: right;
+  }
+  
+  .banner-content--desktop-left .banner-content__buttons {
+    justify-content: flex-start;
+  }
+  
+  .banner-content--desktop-right .banner-content__buttons {
+    justify-content: flex-end;
+  }
+  
+  /* Mobile Responsive Adjustments */
+  @media screen and (max-width: 749px) {
+    #Banner-{{ section.id }} {
+      --header-font-size: {{ section.settings.header_font_size | times: 0.8 }}px;
+      --subheader-font-size: {{ section.settings.subheader_font_size | times: 0.9 }}px;
+      --button-font-size: {{ section.settings.button_font_size | times: 0.9 }}px;
+      --banner-padding: {{ section.settings.banner_padding | times: 0.7 }}px;
+    }
+    
+    .banner-content {
+      justify-content: var(--content-vertical-mobile);
+      align-items: var(--content-horizontal-mobile);
+    }
+    
+    .banner-content__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Mobile Horizontal Alignment Classes */
+    .banner-content--mobile-left {
+      text-align: left;
+    }
+    
+    .banner-content--mobile-center {
+      text-align: center;
+    }
+    
+    .banner-content--mobile-right {
+      text-align: right;
+    }
+    
+    .banner-content--mobile-left .banner-content__buttons {
+      align-items: flex-start;
+    }
+    
+    .banner-content--mobile-center .banner-content__buttons {
+      align-items: center;
+    }
+    
+    .banner-content--mobile-right .banner-content__buttons {
+      align-items: flex-end;
+    }
+  }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="banner-wrapper">
+  <div class="banner-image">
+    {%- assign desktop_image = section.settings.image_desktop -%}
+    {%- assign mobile_image = section.settings.image_mobile -%}
+    {%- assign fallback_image = desktop_image | default: mobile_image -%}
+    
+    <picture>
+      {%- if mobile_image != blank -%}
+        <source 
+          media="(max-width: 749px)"
+          srcset="
+            {%- if mobile_image.width >= 375 -%}{{ mobile_image | image_url: width: 375 }} 375w,{%- endif -%}
+            {%- if mobile_image.width >= 750 -%}{{ mobile_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if mobile_image.width >= 1100 -%}{{ mobile_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {{ mobile_image | image_url }} {{ mobile_image.width }}w
+          "
+          sizes="100vw"
+        >
+      {%- endif -%}
+      
+      {%- if desktop_image != blank -%}
+        <source 
+          media="(min-width: 750px)"
+          srcset="
+            {%- if desktop_image.width >= 750 -%}{{ desktop_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if desktop_image.width >= 1100 -%}{{ desktop_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {%- if desktop_image.width >= 1500 -%}{{ desktop_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {%- if desktop_image.width >= 1780 -%}{{ desktop_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+            {%- if desktop_image.width >= 2000 -%}{{ desktop_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+            {%- if desktop_image.width >= 3000 -%}{{ desktop_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+            {{ desktop_image | image_url }} {{ desktop_image.width }}w
+          "
+          sizes="100vw"
+        >
+      {%- endif -%}
+      
+      <img
+        src="{{ fallback_image | image_url: width: 1500 }}"
+        loading="lazy"
+        alt="{{ fallback_image.alt | escape }}"
+        width="{{ fallback_image.width }}"
+        height="{{ fallback_image.height }}"
+      >
+    </picture>
+  </div>
+  
+  <div class="banner-content banner-content--desktop-{{ section.settings.content_horizontal_alignment_desktop | replace: 'flex-start', 'left' | replace: 'flex-end', 'right' }} banner-content--mobile-{{ section.settings.content_horizontal_alignment_mobile | replace: 'flex-start', 'left' | replace: 'flex-end', 'right' }}">
+    <div class="banner-content__inner">
+      {%- if section.settings.heading_desktop != blank or section.settings.heading_mobile != blank -%}
+        <{{ section.settings.heading_tag }} class="banner-content__header">
+          <span class="desktop-only">{{ section.settings.heading_desktop }}</span>
+          <span class="mobile-only">{{ section.settings.heading_mobile }}</span>
+        </{{ section.settings.heading_tag }}>
+      {%- endif -%}
+      
+      {%- if section.settings.subheading_desktop != blank or section.settings.subheading_mobile != blank -%}
+        <div class="banner-content__subheader">
+          <span class="desktop-only">{{ section.settings.subheading_desktop }}</span>
+          <span class="mobile-only">{{ section.settings.subheading_mobile }}</span>
+        </div>
+      {%- endif -%}
+      
+      {%- if section.settings.button_label != blank or section.settings.button_label_2 != blank -%}
+        <div class="banner-content__buttons">
+          {%- if section.settings.button_label != blank -%}
+            <a
+              {% if section.settings.button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button_link }}"
+              {% endif %}
+              class="banner-button"
+            >
+              {{ section.settings.button_label | escape }}
+            </a>
+          {%- endif -%}
+          
+          {%- if section.settings.button_label_2 != blank -%}
+            <a
+              {% if section.settings.button_link_2 == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button_link_2 }}"
+              {% endif %}
+              class="banner-button"
+            >
+              {{ section.settings.button_label_2 | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Tal Image Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Image Height",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading_desktop",
+      "default": "Desktop banner heading",
+      "label": "Desktop Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_mobile",
+      "default": "Mobile banner heading",
+      "label": "Mobile Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        }
+      ],
+      "default": "h2",
+      "label": "Heading Tag"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading_desktop",
+      "label": "Desktop Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading_mobile",
+      "label": "Mobile Subheading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "First Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "First Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Second Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Second Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "content_horizontal_alignment_desktop",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop Horizontal Content Alignment"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_alignment_desktop",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center",
+      "label": "Desktop Vertical Content Alignment"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "content_horizontal_alignment_mobile",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Mobile Horizontal Content Alignment"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_alignment_mobile",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center",
+      "label": "Mobile Vertical Content Alignment"
+    },
+    {
+      "type": "header",
+      "content": "General Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "banner_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Content Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Content Gap",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Header Styling"
+    },
+    {
+      "type": "color",
+      "id": "header_color",
+      "label": "Header Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Header Font Size",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "header_font_weight",
+      "options": [
+        {
+          "value": "300",
+          "label": "Light"
+        },
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        },
+        {
+          "value": "800",
+          "label": "Extra Bold"
+        }
+      ],
+      "default": "700",
+      "label": "Header Font Weight"
+    },
+    {
+      "type": "text",
+      "id": "header_text_shadow",
+      "label": "Header Text Shadow",
+      "default": "2px 2px 4px rgba(0,0,0,0.5)",
+      "info": "CSS text-shadow property (e.g., '2px 2px 4px rgba(0,0,0,0.5)')"
+    },
+    {
+      "type": "header",
+      "content": "Subheader Styling"
+    },
+    {
+      "type": "color",
+      "id": "subheader_color",
+      "label": "Subheader Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "subheader_show_bg",
+      "label": "Show Subheader Background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "subheader_bg_color",
+      "label": "Subheader Background Color",
+      "default": "#000000",
+      "info": "Only visible when 'Show Subheader Background' is enabled"
+    },
+    {
+      "type": "range",
+      "id": "subheader_bg_opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "label": "Subheader Background Opacity",
+      "default": 0.8,
+      "info": "Controls transparency of background color (0 = fully transparent, 1 = fully opaque)"
+    },
+    {
+      "type": "range",
+      "id": "subheader_border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheader Border Radius",
+      "default": 20,
+      "info": "Controls roundness of subheader corners"
+    },
+    {
+      "type": "range",
+      "id": "subheader_font_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheader Font Size",
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "subheader_font_weight",
+      "options": [
+        {
+          "value": "300",
+          "label": "Light"
+        },
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400",
+      "label": "Subheader Font Weight"
+    },
+    {
+      "type": "text",
+      "id": "subheader_text_shadow",
+      "label": "Subheader Text Shadow",
+      "default": "1px 1px 2px rgba(0,0,0,0.3)",
+      "info": "CSS text-shadow property"
+    },
+    {
+      "type": "header",
+      "content": "Button Styling"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Border Radius",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Font Size",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "button_font_family",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Inherit"
+        },
+        {
+          "value": "Arial, sans-serif",
+          "label": "Arial"
+        },
+        {
+          "value": "Helvetica, sans-serif",
+          "label": "Helvetica"
+        },
+        {
+          "value": "Georgia, serif",
+          "label": "Georgia"
+        },
+        {
+          "value": "'Times New Roman', serif",
+          "label": "Times New Roman"
+        }
+      ],
+      "default": "inherit",
+      "label": "Button Font Family"
+    },
+    {
+      "type": "select",
+      "id": "button_font_weight",
+      "options": [
+        {
+          "value": "300",
+          "label": "Light"
+        },
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "500",
+      "label": "Button Font Weight"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tal Image Banner"
+    }
+  ]
+}
+{% endschema %}

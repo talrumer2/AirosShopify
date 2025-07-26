@@ -1,0 +1,275 @@
+<style>
+.switching-banner-container-{{ section.settings.slide_id }} {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: {{ section.settings.banner_aspect_ratio | default: '16 / 6.5' }};
+  background: #000;
+}
+
+.switching-banner-slide-{{ section.settings.slide_id }} {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+  background: black;
+}
+
+.switching-banner-slide-{{ section.settings.slide_id }}.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.switching-banner-slide-{{ section.settings.slide_id }} img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.switching-banner-slide-{{ section.settings.slide_id }} img.scale-start {
+  transform: scale({{ section.settings.starting_banner_scale | default: '1.1' }}) !important;
+}
+
+.switching-banner-content-{{ section.settings.slide_id }} {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: {{ section.settings.content_offset_bottom | default: 50 }}px;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.switching-banner-button-{{ section.settings.slide_id }} {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: {{ section.settings.button_background_color | default: '#ffffff' }};
+  color: {{ section.settings.button_font_color | default: '#000000' }};
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: {{ section.settings.button_border_radius | default: 5 }}px;
+  transition: background-color 0.3s ease;
+}
+
+.switching-banner-button-{{ section.settings.slide_id }}:hover {
+  background-color: {{ section.settings.button_hover_background_color | default: '#cccccc' }};
+}
+
+.switching-banner-dots-{{ section.settings.slide_id }} {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.switching-banner-dot-{{ section.settings.slide_id }} {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switching-banner-dot-{{ section.settings.slide_id }}::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: none;
+  width: 100%;
+}
+
+.switching-banner-dot-{{ section.settings.slide_id }}.active::after {
+  animation: fillStraight {{ section.settings.rotation_interval | default: 5 }}s linear forwards;
+}
+
+@keyframes fillStraight {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+</style>
+
+<div class="switching-banner-container-{{ section.settings.slide_id }}"
+     data-rotation-interval="{{ section.settings.rotation_interval | times: 1000 }}">
+  {% for block in section.blocks %}
+    {% assign image_url = block.settings.image | image_url: width: 2000 %}
+    <div class="switching-banner-slide-{{ section.settings.slide_id }} {% if forloop.first %}active{% endif %}">
+      <img src="{{ image_url }}" alt="Banner Image" class="scale-start">
+      {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+        <div class="switching-banner-content-{{ section.settings.slide_id }}">
+          <a href="{{ block.settings.button_link }}" class="switching-banner-button-{{ section.settings.slide_id }}">
+            {{ block.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+  <div class="switching-banner-dots-{{ section.settings.slide_id }}">
+    {% for block in section.blocks %}
+      <span class="switching-banner-dot-{{ section.settings.slide_id }} {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}"></span>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.switching-banner-container-{{ section.settings.slide_id }}');
+  if (!container) return;
+
+  const slides = container.querySelectorAll('.switching-banner-slide-{{ section.settings.slide_id }}');
+  const dots = container.querySelectorAll('.switching-banner-dot-{{ section.settings.slide_id }}');
+  const interval = parseInt(container.getAttribute('data-rotation-interval')) || 5000;
+  let currentIndex = 0;
+  let timer;
+  let resetScaleTimeout;
+  let scaleAnimationTimeout;
+  let canClick = true;
+
+  function triggerScaleAnimation(img) {
+    clearTimeout(scaleAnimationTimeout);
+    img.classList.add('scale-start');
+    img.classList.remove('scale-start');
+    scaleAnimationTimeout = setTimeout(() => {
+      img.classList.add('scale-start');
+    }, interval + 500);
+  }
+
+  function showSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    dots[currentIndex].classList.remove('active');
+    currentIndex = index;
+    slides[currentIndex].classList.add('active');
+    dots[currentIndex].classList.add('active');
+
+    const img = slides[currentIndex].querySelector('img');
+    if (img) triggerScaleAnimation(img);
+  }
+
+  function resetOtherScales(exceptIndex) {
+    clearTimeout(resetScaleTimeout);
+    resetScaleTimeout = setTimeout(() => {
+      slides.forEach((slide, idx) => {
+        if (idx !== exceptIndex) {
+          const img = slide.querySelector('img');
+          if (img) img.classList.add('scale-start');
+        }
+      });
+    }, 500);
+  }
+
+  function startAutoRotate() {
+    timer = setInterval(() => {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+      resetOtherScales(nextIndex);
+    }, interval);
+  }
+
+  function resetAutoRotate(newIndex) {
+    clearInterval(timer);
+    clearTimeout(resetScaleTimeout);
+    clearTimeout(scaleAnimationTimeout);
+    showSlide(newIndex);
+    startAutoRotate();
+    resetOtherScales(newIndex);
+  }
+
+  const allImages = container.querySelectorAll('img');
+  allImages.forEach(img => img.classList.add('scale-start'));
+  const firstImg = slides[currentIndex].querySelector('img');
+  if (firstImg) triggerScaleAnimation(firstImg);
+
+  startAutoRotate();
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', function () {
+      if (!canClick) return;
+      canClick = false;
+      setTimeout(() => canClick = true, 600);
+
+      const index = parseInt(this.getAttribute('data-index'));
+      if (index !== currentIndex) {
+        resetAutoRotate(index);
+      }
+    });
+  });
+
+  // Swipe detection
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  container.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  container.addEventListener('touchend', function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipeGesture();
+  }, false);
+
+  function handleSwipeGesture() {
+    if (touchEndX < touchStartX - 50) {
+      // Swiped left
+      let nextIndex = (currentIndex + 1) % slides.length;
+      resetAutoRotate(nextIndex);
+    }
+    if (touchEndX > touchStartX + 50) {
+      // Swiped right
+      let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      resetAutoRotate(prevIndex);
+    }
+  }
+});
+</script>
+
+
+{% schema %}
+{
+  "name": "Switching Banner",
+  "tag": "section",
+  "class": "switching-banner-section",
+  "settings": [
+    { "type": "text", "id": "slide_id", "label": "Unique Slide ID", "default": "1" },
+    { "type": "number", "id": "rotation_interval", "label": "Rotation Interval (seconds)", "default": 5 },
+    { "type": "number", "id": "content_offset_bottom", "label": "Content Distance From Bottom (px)", "default": 50 },
+    { "type": "text", "id": "banner_aspect_ratio", "label": "Aspect Ratio (16/6.5 default)", "default": "16 / 6.5" },
+    { "type": "color", "id": "button_background_color", "label": "Button Background Color", "default": "#ffffff" },
+    { "type": "color", "id": "button_font_color", "label": "Button Font Color", "default": "#000000" },
+    { "type": "color", "id": "button_hover_background_color", "label": "Button Hover Background Color", "default": "#cccccc" },
+    { "type": "number", "id": "button_border_radius", "label": "Button Border Radius (px)", "default": 5 },
+    { "type": "text", "id": "starting_banner_scale", "label": "Starting Banner Image Scale", "default": "1.1", "info": "Decimal scale like 1.1 for zoom effect" }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Banner Image" },
+        { "type": "text", "id": "button_text", "label": "Button Text", "default": "Learn More" },
+        { "type": "url", "id": "button_link", "label": "Button Link" }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    { "name": "Switching Banner", "category": "Custom" }
+  ]
+}
+{% endschema %}

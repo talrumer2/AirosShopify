@@ -1,0 +1,570 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "videobanner_gKGbKe": {
+      "type": "videobanner",
+      "blocks": {
+        "heading_gGPnRX": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "SUMMER REFRESH",
+            "desktop_width": 1000,
+            "mobile_width": 720,
+            "desktop_heading_size": 62,
+            "mobile_heading_size": 30,
+            "h1_heading": true
+          }
+        },
+        "subheading_pcA796": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "STAY COOL. LOOK SHARP. FEEL THE SUMMER ENERGY"
+          }
+        },
+        "button_XcMVTW": {
+          "type": "button",
+          "settings": {
+            "button_text": "FOR HIM",
+            "button_link": "shopify://collections/for-him",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#525252",
+            "button_bg_hover": "#7d7d7d",
+            "button_radius": 4,
+            "font_weight": true,
+            "font_size": 14
+          }
+        },
+        "button_nUjXnr": {
+          "type": "button",
+          "settings": {
+            "button_text": "FOR HER",
+            "button_link": "shopify://collections/for-her",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#525252",
+            "button_bg_hover": "#7d7d7d",
+            "button_radius": 4,
+            "font_weight": true,
+            "font_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "heading_gGPnRX",
+        "subheading_pcA796",
+        "button_XcMVTW",
+        "button_nUjXnr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".subheading.video-text {/* margin-top: -10px; */}",
+        ".text-overlay {padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "video": "shopify://files/videos/BannerVideoPC.mp4",
+        "video_mobile": "shopify://files/videos/0501_51182301-c183-4813-8227-fe93b76bfbfa.mp4",
+        "video_url": "",
+        "image_placeholder": "shopify://shop_images/BannerVideoPC-Cover.jpg",
+        "video-alt": "Airos Collections",
+        "minimalistic_buttons": true,
+        "enable_scroll_button": false,
+        "margin_top": 0,
+        "margin_bottom": 24,
+        "content_position": "bottom-center",
+        "desktop_height": 640,
+        "mobile_height": 460,
+        "pc_use_aspect_ratio": false,
+        "mobile_use_aspect_ratio": false,
+        "pc_ratio": "16/7",
+        "mobile_ratio": "2/3.1",
+        "mobile_vheight": 60,
+        "pc_vheight": 64
+      }
+    },
+    "switching_banner_rQETCD": {
+      "type": "switching-banner",
+      "blocks": {
+        "banner_wJPVwy": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/redhead_promo_6c6d9c74-3a0b-4d4c-8346-b4274ab11667.jpg",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "banner_U7UkNj": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/rosan_pro.jpg",
+            "button_text": "",
+            "button_link": "shopify://collections/street-collection"
+          }
+        }
+      },
+      "block_order": [
+        "banner_wJPVwy",
+        "banner_U7UkNj"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.switching-banner-container-1 {display: none; }}"
+      ],
+      "name": "Switching Banner PC",
+      "settings": {
+        "slide_id": "1",
+        "rotation_interval": 5,
+        "content_offset_bottom": 80,
+        "banner_aspect_ratio": "16 / 5.8",
+        "button_background_color": "#131313",
+        "button_font_color": "#ffffff",
+        "button_hover_background_color": "#565656",
+        "button_border_radius": 2,
+        "starting_banner_scale": "1.2"
+      }
+    },
+    "switching_banner_WDM4nV": {
+      "type": "switching-banner",
+      "blocks": {
+        "banner_NHjgyY": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/redhead_promo_mobile.jpg",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "banner_twDDnE": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/rosan_pro_mobile.jpg",
+            "button_text": "",
+            "button_link": "shopify://collections/street-collection"
+          }
+        }
+      },
+      "block_order": [
+        "banner_NHjgyY",
+        "banner_twDDnE"
+      ],
+      "custom_css": [
+        "@media (min-width: 767px) {.switching-banner-container-2 {display: none; }}"
+      ],
+      "name": "Switching Banner MOBILE",
+      "settings": {
+        "slide_id": "2",
+        "rotation_interval": 5,
+        "content_offset_bottom": 70,
+        "banner_aspect_ratio": "2/2.06",
+        "button_background_color": "#ffffff",
+        "button_font_color": "#000000",
+        "button_hover_background_color": "#cccccc",
+        "button_border_radius": 5,
+        "starting_banner_scale": "1.2"
+      }
+    },
+    "image_banner_KKqXQz": {
+      "type": "image-banner",
+      "blocks": {
+        "text_iLmFkV": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_Gfr4b9": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Jackets",
+            "button_link_1": "shopify://collections/jackets",
+            "button_style_secondary_1": false,
+            "button_label_2": "Hoodies",
+            "button_link_2": "shopify://collections/hoodies",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_iLmFkV",
+        "buttons_Gfr4b9"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.banner, slideshow-component {display: none; }}",
+        ".content-container {margin-top: 85px; transition: transform 0.2s; padding: 0px;}",
+        "h2.banner__heading {line-height: 0.9; text-shadow: 2px 2px 4px #00000091;}",
+        ".banner__text {margin-top: -6px; text-shadow: 2px 2px 3px #00000091;}",
+        ".banner__buttons .button {width: 120px !important; min-width: 0px; padding-left: 10px; padding-right: 10px; border: none;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/upscaled_banner_dark_wider.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection_dkWPAV": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".title {/* text-align: center; */}",
+        ".collection__view-all {/* padding-top: 10px; */}",
+        "slider-component {max-width: 100%;}",
+        ".collection__view-all {/* margin-top: 20px; */}",
+        ".card__heading {text-transform: uppercase; font-weight: bold;}",
+        ".price {margin-top: 0px; font-size: 14px; color: #4c4c4c;}",
+        "div.slider-buttons {display: none;}"
+      ],
+      "settings": {
+        "collection": "street-collection",
+        "products_to_show": 4,
+        "title": "TRENDING NOW",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "image_banner_XzwAQk": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_fBfUwD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "TIMELESS COLLECTION",
+            "heading_size": "h2"
+          }
+        },
+        "text_8Xk4qB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_gxm9YH": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "JACKETS",
+            "button_link_1": "shopify://collections/jackets",
+            "button_style_secondary_1": true,
+            "button_label_2": "HOODIES",
+            "button_link_2": "shopify://collections/hoodies",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_fBfUwD",
+        "text_8Xk4qB",
+        "buttons_gxm9YH"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.banner, slideshow-component {display: none; }}",
+        ".content-container {margin-top: 225px;}",
+        "h2.banner__heading {line-height: 0.9; text-shadow: 1px 1px 4px #000000c2;}",
+        ".banner__text {margin-top: -4px;}",
+        ".banner__buttons .button {width: 120px !important; min-width: 0px; padding-left: 10px; padding-right: 10px; background-color: rgba(255, 255, 255, 0.2); -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/new_banner_dark_only_female_narrow.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "tal_image_banner_XHU3NV": {
+      "type": "tal-image-banner",
+      "name": "Tal Image Banner",
+      "settings": {
+        "image_desktop": "shopify://shop_images/womenActivewearV4.jpg",
+        "image_mobile": "shopify://shop_images/womenActivewearV4_mobile_narrow.jpg",
+        "image_height": 100,
+        "heading_desktop": "SUMMER VIBES",
+        "heading_mobile": "SUMMER VIBES",
+        "heading_tag": "h1",
+        "subheading_desktop": "Summer sets made to move with you, wherever summer takes you",
+        "subheading_mobile": "Wherever summer takes you",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/leggings-and-tops",
+        "button_label_2": "",
+        "button_link_2": "",
+        "content_horizontal_alignment_desktop": "flex-start",
+        "content_vertical_alignment_desktop": "flex-end",
+        "content_horizontal_alignment_mobile": "center",
+        "content_vertical_alignment_mobile": "flex-end",
+        "banner_padding": 40,
+        "content_gap": 8,
+        "header_color": "#ffffff",
+        "header_font_size": 42,
+        "header_font_weight": "700",
+        "header_text_shadow": "2px 2px 4px rgba(0,0,0,0.3)",
+        "subheader_color": "#ffffff",
+        "subheader_show_bg": true,
+        "subheader_bg_color": "#000000",
+        "subheader_bg_opacity": 0.4,
+        "subheader_border_radius": 8,
+        "subheader_font_size": 12,
+        "subheader_font_weight": "400",
+        "subheader_text_shadow": "1px 1px 0px rgba(0,0,0,0.0)",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#151515",
+        "button_border_radius": 50,
+        "button_font_size": 16,
+        "button_font_family": "inherit",
+        "button_font_weight": "700"
+      }
+    },
+    "image_banner_super_8cNCEn": {
+      "type": "image-banner-super",
+      "blocks": {
+        "heading_94dENt": {
+          "type": "heading",
+          "settings": {
+            "heading": "SEAMLESS ENERGY",
+            "heading_size": "h2"
+          }
+        },
+        "buttons_pXhPeg": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/leggings-and-tops",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_94dENt",
+        "buttons_pXhPeg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".banner__heading {font-size: 32px; @media (max-width: 767px) {text-shadow: 2px 2px 0px #4a3261; font-size: 28px; }}",
+        ".content-container {padding-bottom: 0px;}",
+        ".banner__content {padding: 50px; margin: 0px; @media (max-width: 767px) {padding: 24px; }}",
+        ".banner__buttons {margin-top: 10px;}",
+        "a.button {background-color: white; border-radius: 999px; color: black; font-family: arial; font-weight: bold; border: 6px solid white;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/womenActivewearV4.jpg",
+        "image_overlay_opacity": 0,
+        "blocks_gap": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "top-center",
+        "desktop_content_alignment": "left",
+        "vertical_alignment": "bottom",
+        "show_text_box": false,
+        "color_scheme": "scheme-4",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection_MWhU87": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".title {/* text-align: center; */}",
+        ".collection__view-all {/* margin-top: 20px; */ /* margin-bottom: 40px; */}",
+        "slider-component {max-width: 100%;}",
+        ".card__heading {text-transform: uppercase; font-weight: bold;}",
+        ".price {margin-top: 0px; font-size: 14px; color: #4c4c4c;}",
+        "div.slider-buttons {display: none;}"
+      ],
+      "settings": {
+        "collection": "apparel",
+        "products_to_show": 8,
+        "title": "AIROS CLASSICS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_zoom_aGJjMt": {
+      "type": "image-banner-zoom",
+      "blocks": {
+        "heading_F7VnMK": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "ROSAN COLLECTION",
+            "desktop_width": 1000,
+            "mobile_width": 700,
+            "desktop_heading_size": 84,
+            "mobile_heading_size": 36,
+            "h1_heading": true
+          }
+        },
+        "subheading_APkM3k": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "AVAILABLE FOR PREORDER"
+          }
+        },
+        "button_tjKzxt": {
+          "type": "button",
+          "settings": {
+            "button_text": "PREORDER",
+            "button_link": "shopify://products/rosan-cat-eye-frame-sunglasses",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#000000",
+            "button_bg_hover": "#232323",
+            "button_radius": 0,
+            "font_weight": false,
+            "font_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "heading_F7VnMK",
+        "subheading_APkM3k",
+        "button_tjKzxt"
+      ],
+      "settings": {
+        "desktop_image": "shopify://shop_images/ROSANpcWIDE.jpg",
+        "mobile_image": "shopify://shop_images/ROSANmobileHigh.jpg",
+        "loop_duration": "5",
+        "zoom_start": "1.2",
+        "pc_use_aspect_ratio": false,
+        "mobile_use_aspect_ratio": false,
+        "pc_ratio": "16/6.8",
+        "mobile_ratio": "2/3",
+        "pc_vheight": 80,
+        "mobile_vheight": 58,
+        "content_position": "bottom-center",
+        "minimalistic_buttons": true
+      }
+    },
+    "collection_list_with_img_KLNPaW": {
+      "type": "collection-list-with-img",
+      "blocks": {
+        "featured_collection_FX79Ax": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts",
+            "custom_image": "shopify://shop_images/t-shirt-wabi.png"
+          }
+        },
+        "featured_collection_agai4Y": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jackets",
+            "custom_image": "shopify://shop_images/badguy-noise.png"
+          }
+        },
+        "featured_collection_iVkqVz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies",
+            "custom_image": "shopify://shop_images/model11_05f00531-9a06-4d80-9892-91e6173e6b13.png"
+          }
+        },
+        "featured_collection_7tihAt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories",
+            "custom_image": "shopify://shop_images/hat.png"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_FX79Ax",
+        "featured_collection_agai4Y",
+        "featured_collection_iVkqVz",
+        "featured_collection_7tihAt"
+      ],
+      "custom_css": [
+        ".collection-list-wrapper {padding-left: 0px; padding-right: 0px;}",
+        ".collection-list-wrapper {max-width: 94%;}"
+      ],
+      "settings": {
+        "title": "LATEST COLLECTIONS",
+        "heading_size": "h2",
+        "title_alignment": "center",
+        "image_ratio": "square",
+        "remove_backdrop": true,
+        "columns_desktop": 4,
+        "desktop_width": 100,
+        "color_scheme": "scheme-1",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    }
+  },
+  "order": [
+    "videobanner_gKGbKe",
+    "switching_banner_rQETCD",
+    "switching_banner_WDM4nV",
+    "image_banner_KKqXQz",
+    "featured_collection_dkWPAV",
+    "image_banner_XzwAQk",
+    "tal_image_banner_XHU3NV",
+    "image_banner_super_8cNCEn",
+    "featured_collection_MWhU87",
+    "image_banner_zoom_aGJjMt",
+    "collection_list_with_img_KLNPaW"
+  ]
+}

@@ -1,0 +1,110 @@
+{% assign menu = linklists[section.settings.menu] %}
+
+<div class="mega-menu-container">
+  <!-- Promo Images -->
+  {% if section.blocks.size > 0 %}
+    <div class="promo-images">
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.link }}">
+          <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{ block.settings.alt_text }}" />
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Menu Columns -->
+  <div class="mega-menu-columns">
+    {% for top_link in menu.links %}
+      <div class="mega-column">
+        <strong>{{ top_link.title }}</strong>
+        <ul>
+          {% for sublink in top_link.links %}
+            <li><a href="{{ sublink.url }}">{{ sublink.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.mega-menu-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+}
+.promo-images {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.promo-images img {
+  width: 100%;
+  border-radius: 8px;
+}
+.mega-menu-columns {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+}
+.mega-column strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.mega-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mega-column li a {
+  display: block;
+  padding: 0.25rem 0;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Mega Menu",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Select Menu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promo",
+      "name": "Promo Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Promo Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "Promo"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Mega Menu",
+      "category": "Header"
+    }
+  ]
+}
+{% endschema %}

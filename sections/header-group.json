@@ -1,0 +1,117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_kKFqi3": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_zG3xA4": {
+          "type": "announcement",
+          "settings": {
+            "text": "משלוח חינם מ 249₪",
+            "link": ""
+          }
+        },
+        "announcement_wMTTaj": {
+          "type": "announcement",
+          "settings": {
+            "text": "MOVE WITH POWER - המוטו",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_zG3xA4",
+        "announcement_wMTTaj"
+      ],
+      "custom_css": [
+        "span {font-size: 12px; font-weight: bold; font-family: helvetica;}"
+      ],
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "color_scheme": "scheme-4",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "countdown_flip_krbFB7": {
+      "type": "countdown-flip",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.switching-banner-container {display: none; }}",
+        "#countdown .text {font-size: 12px !important;}"
+      ],
+      "name": "Countdown Flip",
+      "settings": {
+        "title": "18% OFF ALL SITE! \"18LUCKYMAY\" Sale Ends in:",
+        "date": "2025-05-15 23:00",
+        "timezone": "Asia/Jerusalem",
+        "width": "300",
+        "textcolor": "#ffffff",
+        "digitscolor": "#2f2f2f",
+        "background": "#121212",
+        "cardbackground": "#e8e8e8",
+        "unitscolor": "#ededed"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_Q3B7KM": {
+          "type": "mega_menu",
+          "settings": {
+            "image_max_height": 240,
+            "menu_item_title": "קני לפי",
+            "title_1": "GYM SETS",
+            "image_1": "shopify://shop_images/womenActivewearV4_mobile_narrow.jpg",
+            "link_1": "shopify://collections/leggings-and-tops",
+            "alt_1": "Very good",
+            "title_2": "FASHION",
+            "image_2": "shopify://shop_images/general-clothes-bold-6.jpg",
+            "link_2": "#",
+            "alt_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_Q3B7KM"
+      ],
+      "custom_css": [
+        ".header {margin-left: 0px; margin-right: 0px; min-width: 100%; display: flex; justify-content: space-between;}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "mobile_logo_position": "center",
+        "menu": "test-mega-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_kKFqi3",
+    "countdown_flip_krbFB7",
+    "header"
+  ]
+}

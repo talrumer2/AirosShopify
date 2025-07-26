@@ -1,0 +1,127 @@
+{% schema %}
+{
+  "name": "Countdown Flip",
+  "tag": "header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "22% Sale! Use CODE: XXX | Sale Ends in:"
+    },
+    {
+      "type": "text",
+      "id": "date",
+      "label": "Countdown Date (YYYY-MM-DD HH:MM)",
+      "default": "2025-04-25 01:00"
+    },
+    {
+      "type": "text",
+      "id": "timezone",
+      "label": "Timezone",
+      "default": "Asia/Jerusalem"
+    },
+    {
+      "type": "text",
+      "id": "width",
+      "label": "Width (px)",
+      "default": "340"
+    },
+    {
+      "type": "color",
+      "id": "textcolor",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "digitscolor",
+      "label": "Digits Color",
+      "default": "#2F2F2F"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Section Background Color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "cardbackground",
+      "label": "Card Background Color (inside widget)",
+      "default": "#E8E8E8"
+    },
+    {
+      "type": "color",
+      "id": "unitscolor",
+      "label": "Units Color",
+      "default": "#EDEDED"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Flip"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  
+/* ANIMATED TEXT */
+.animated-gradient-text {
+  background: linear-gradient(90deg, violet, white, violet, white);
+  background-size: 280% auto;
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 2.7s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+  
+.countdown-flip-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 87.6px;
+  padding: 0.5rem 0;
+  background-color: {{ section.settings.background }};
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+{% endstyle %}
+
+<div class="countdown-flip-wrapper">
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+  <div class="content-wrapper">
+    <div class="animated-gradient-text" style="font-size: 12px; margin-bottom: -22px;">
+      {{ section.settings.title }}
+    </div>
+      <a
+        href="https://logwork.com/countdown-6ern"
+        class="countdown-timer"
+        data-width="{{ section.settings.width }}"
+        data-timezone="{{ section.settings.timezone }}"
+        data-textcolor="{{ section.settings.textcolor }}"
+        data-date="{{ section.settings.date }}"
+        data-background="{{ section.settings.cardbackground }}"
+        data-digitscolor="{{ section.settings.digitscolor }}"
+        data-unitscolor="{{ section.settings.unitscolor }}"
+      >‎</a>
+  </div>
+</div>

@@ -1,0 +1,258 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ss_product_reviews_aWLemW": {
+      "type": "ss-product-reviews",
+      "blocks": {
+        "review_4j74qA": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-05-17_at_10.26.24.jpg",
+            "hide_image": false,
+            "author": "Amanda",
+            "stars_count": 5,
+            "text": "\"I’m OBSESSED??? This tee is so clean it hurts 😍✨\""
+          }
+        },
+        "review_KGnkfp": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-05-11_at_17.06.56_1.jpg",
+            "hide_image": false,
+            "author": "Oliver",
+            "stars_count": 5,
+            "text": "\"Quality is amazing, the design is SICK, and it fits perfectly! I'm gonna order more in the future for sure.\""
+          }
+        },
+        "review_f9F33t": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-05-11_at_17.06.56.jpg",
+            "hide_image": false,
+            "author": "Oliver",
+            "stars_count": 5,
+            "text": "\"Quality is amazing, the design is SICK, and it fits perfectly! I'm gonna order more in the future for sure.\""
+          }
+        },
+        "review_inM8PE": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/zillaboard.jpg",
+            "hide_image": false,
+            "author": "Dylan B.",
+            "stars_count": 5,
+            "text": "\"Fits good love the print\""
+          }
+        },
+        "review_HEm8UQ": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/model_hat.jpg",
+            "hide_image": false,
+            "author": "Zane",
+            "stars_count": 5,
+            "text": "\"Looks dope, fits nice, got lots of compliments alreadyy!!\""
+          }
+        },
+        "review_cePJBM": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/review_Rowan.jpg",
+            "hide_image": false,
+            "author": "Rowan",
+            "stars_count": 5,
+            "text": "\"Literally SCREAMING!!! This hoodie is next level cutenes 😭🔥\""
+          }
+        },
+        "review_Khm38y": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-05-27_at_16.48.15.jpg",
+            "hide_image": false,
+            "author": "Ahmed A.",
+            "stars_count": 5,
+            "text": "\"Best hat I own, probably gonna buy the other hat too\""
+          }
+        }
+      },
+      "block_order": [
+        "review_4j74qA",
+        "review_KGnkfp",
+        "review_f9F33t",
+        "review_inM8PE",
+        "review_HEm8UQ",
+        "review_cePJBM",
+        "review_Khm38y"
+      ],
+      "name": "SS - Product Reviews",
+      "settings": {
+        "reviews_position": "below_buy",
+        "reviews_meta": "",
+        "reviews_radius": 0,
+        "review_padding_vertical": 8,
+        "review_padding_horizontal": 8,
+        "review_radius": 8,
+        "review_border_thickness": 0,
+        "image_width": 85,
+        "image_radius": 8,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "stars_size": 14,
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_mt": 4,
+        "arrow_size": 24,
+        "arrow_size_mobile": 24,
+        "arrow_icon_size": 16,
+        "arrow_icon_size_mobile": 16,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "review_bg_color": "#f3f3f3",
+        "review_border_color": "#000000",
+        "image_border_color": "#000000",
+        "author_color": "#000000",
+        "text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f3f3f3",
+        "arrow_bg_hover_color": "#dddddd",
+        "arrow_border_color": "#f3f3f3",
+        "arrow_border_hover_color": "#dddddd",
+        "stars_color": "#000000",
+        "background_color": "#f3f3f3",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 10,
+        "margin_bottom": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "custom_css": [
+        ".product__title {text-transform: uppercase; margin-bottom: 0px;}",
+        ".product__title > h1 {font-size: 18px; font-weight: bold; color: #3c3c3c;}",
+        "div[id*=\"price-template-\"] {margin-top: 0px; margin-bottom: 0px;}",
+        ".product-form__submit {transition: background-color 0.2s ease, color 0.2s ease;}",
+        ".product-form__submit:hover {background-color: #1c1c1c; color: white;}",
+        ".product__description {font-size: 14px;}"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "ss_product_reviews_aWLemW",
+    "main",
+    "related-products"
+  ]
+}

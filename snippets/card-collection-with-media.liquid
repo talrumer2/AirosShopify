@@ -1,0 +1,121 @@
+{% comment %}
+  Renders a collection card with support for overriding the image using a custom media input,
+  and displays the text (title and description) inside the image at the bottom center.
+  The image and overlay are fully clickable and link to the collection.
+{% endcomment %}
+
+{%- liquid
+  assign display_image = media | default: card_collection.featured_image
+
+  assign ratio = 1
+  if display_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif display_image and media_aspect_ratio == 'adapt'
+    assign ratio = display_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == null
+    assign ratio = 1
+  endif
+
+  assign card_color_scheme = settings.card_color_scheme
+  assign card_style = settings.card_style
+  if wrapper_class == null or wrapper_class == 'none'
+    assign card_color_scheme = settings.collection_card_color_scheme
+    assign card_style = settings.collection_card_style
+  endif
+-%}
+
+<style>
+  .collection-banner-image {
+    transition: all 0.5s ease !important;
+  }
+  div.center-focused img {
+    transform: scale(1.12);
+  }
+</style>
+
+<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+  <a href="{{ card_collection.url }}" class="card-link" style="display: block; text-decoration: none;">
+    <div
+      class="
+        card
+        card--{{ card_style }}
+        card--media
+        {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
+        {% if extend_height %} card--extend-height{% endif %}
+      "
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; position: relative; overflow: hidden;"
+    >
+      <div
+        class="card__inner ratio"
+        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; position: relative;"
+      >
+        {%- if display_image -%}
+          <div class="card__media card__media__scale_on_focus">
+            <div class="media media--transparent media--hover-effect">
+              <img
+                srcset="
+                  {%- if display_image.width >= 165 -%}{{ display_image | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if display_image.width >= 330 -%}{{ display_image | image_url: width: 330 }} 330w,{%- endif -%}
+                  {%- if display_image.width >= 535 -%}{{ display_image | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if display_image.width >= 750 -%}{{ display_image | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if display_image.width >= 1000 -%}{{ display_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                  {%- if display_image.width >= 1500 -%}{{ display_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {%- if display_image.width >= 3000 -%}{{ display_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                  {{ display_image | image_url }} {{ display_image.width }}w
+                "
+                src="{{ display_image | image_url: width: 1500 }}"
+                sizes="
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                  (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                  calc(100vw - 3rem)
+                "
+                alt="{{ display_image.alt | escape }}"
+                height="{{ display_image.height }}"
+                width="{{ display_image.width }}"
+                loading="lazy"
+                class="motion-reduce collection-banner-image"
+              >
+            </div>
+          </div>
+        {%- endif -%}
+
+        <div class="card__text-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; text-align: center; {% unless remove_backdrop %}background: rgba(0, 0, 0, 0.5);{% endunless %} padding: 1rem; color: white;">
+          <h2 class="card__heading" style="margin: 0; margin-bottom: 10px; color: white;">
+            {{ card_collection.title | escape }}
+          </h2>
+          {%- if card_collection.description != blank -%}
+            <p class="card__caption" style="margin: 0.5rem 0 0; font-size: 0.875rem; color: white;">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+            </p>
+          {%- endif -%}
+        </div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth > 750) return;
+    function checkCenterImage() {
+      const centerY = window.innerHeight / 2;
+      const centerX = window.innerWidth / 2;
+      document.querySelectorAll('div.card__media__scale_on_focus').forEach(div => {
+        const rect = div.getBoundingClientRect();
+        const inVertical = rect.top <= centerY && rect.bottom >= centerY;
+        const inHorizontal = rect.left <= centerX && rect.right >= centerX;
+        if (inVertical && inHorizontal) {
+          div.classList.add('center-focused');
+        } else {
+          div.classList.remove('center-focused');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkCenterImage);
+    window.addEventListener('resize', checkCenterImage);
+    checkCenterImage();
+  });
+</script>

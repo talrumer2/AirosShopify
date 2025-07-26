@@ -1,0 +1,74 @@
+<style>
+    .promo-images {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .promo-link {
+      display: block;
+      flex: 0 0 auto;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      text-align: center;
+    }
+    .promo-link img {
+      display: block;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .promo-link .promo-title {
+      margin-top: 0.5rem;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+      font-weight: bold;
+    }
+    .mega-menu-container {
+      width: max-content;
+    }
+  </style>
+<div class="mega-menu-container">
+  <div class="promo-images">
+    {% for i in (1..4) %}
+      {% assign image_key = "image_" | append: i %}
+      {% assign link_key = "link_" | append: i %}
+      {% assign alt_key = "alt_" | append: i %}
+      {% assign title_key = "title_" | append: i %}
+      
+      {% assign image = block.settings[image_key] %}
+      {% assign link = block.settings[link_key] %}
+      {% assign alt = block.settings[alt_key] %}
+      {% assign text = block.settings[title_key] %}
+      {% assign max_height = block.settings.image_max_height %}
+      {% if image != blank %}
+        <a href="{{ link }}" class="promo-link">
+          <img
+            src="{{ image | image_url: width: 300 }}"
+            alt="{{ alt }}"
+            style="max-height: {{ max_height }}px; object-fit: contain;"
+          >
+          {% if text != blank %}
+            <div class="promo-title">{{ text }}</div>
+          {% endif %}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mega-menu-columns">
+    {% assign menu = linklists[block.settings.menu] %}
+    {% for top_link in menu.links %}
+      <div class="mega-column">
+        <strong>{{ top_link.title }}</strong>
+        <ul>
+          {% for sublink in top_link.links %}
+            <li><a href="{{ sublink.url }}">{{ sublink.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
