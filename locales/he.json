@@ -742,7 +742,7 @@
           "value": "ערך"
         },
         "review_and_confirm_title": "סקירה ואישור",
-        "checkout_as_guest": "צ'ק אאוט כאורח",
+        "checkout_as_guest": "תשלום כאורחת",
         "account_more_actions": "פעולות נוספות עבור חשבון זה",
         "checkout_a_different_way": "בדקי דרך אחרת"
       },
@@ -1800,7 +1800,7 @@
           "message": "יותר מדי ניסיונות",
           "description": "אנא נסי שוב בעוד מספר דקות"
         },
-        "line_to_check_out": "אתה בתור לצ'ק אאוט",
+        "line_to_check_out": "את בתור לתשלום",
         "cart_summary_heading": "העגלה שלך",
         "merchandise": {
           "available": "זמינה",
@@ -4276,7 +4276,7 @@
       "estimated_total": "סכום משוער",
       "new_estimated_total": "סכום משוער חדש",
       "note": "הזמינו הוראות מיוחדות",
-      "checkout": "צ'ק אאוט",
+      "checkout": "מעבר לתשלום",
       "empty": "העגלה שלך ריקה",
       "cart_error": "אירעה שגיאה בעת עדכון עגלת הקניות שלך. אנא נסי שוב.",
       "cart_quantity_error_html": "ניתן להוסיף רק {{ quantity }} של פריט זה לעגלת הקניות שלך.",
