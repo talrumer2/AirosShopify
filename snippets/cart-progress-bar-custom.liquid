@@ -207,6 +207,7 @@
 
       #cart-progress-wrapper {
         padding-left: 26px;
+        padding-top: 10px;
       }
 
       #cart-progress-bar {
@@ -272,8 +273,8 @@
         
         .goal-check {
           position: absolute;
-          top: -25px;
-          left: 50%;
+          top: 15px;
+          left: 70%;
           transform: translateX(-50%);
           opacity: 0;
           transition: opacity 0.3s ease, transform 0.3s ease;
@@ -311,9 +312,14 @@
       
       .goal-message {
         text-align: center;
-        font-size: 12px;
         margin: 10px auto;
+        font-size: 1em;
         color: {{ settings.cart_progress_bar_text_color }};
+      }
+      html.is-mobile {
+        .goal-message {
+          font-size: 12px
+        }
       }
     </style>
   {% endif %}

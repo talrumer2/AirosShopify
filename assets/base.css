@@ -3870,8 +3870,8 @@ html.is-mobile .header .header__heading {
   transform: translateX(-50%);
 }
 
-html.is-pc .header .header__inline-menu {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+html.is-mobile .header__heading-logo,
+html.is-mobile .header__heading-logo .tal-svg,
+html.is-mobile .header__heading-logo img {
+  max-width: 100px;
 }
