@@ -3867,3 +3867,22 @@ html[lang="he"] .product__info-wrapper {
   text-align: right;
 } */
 
+#Sea-Accessibility__button .Sea-Accessibility_WidgetIcon {
+  right: -8px;
+  bottom: -8px;
+  scale: 0.7;
+}
+
+
+
+html.mobile .header .header__inline-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+html:not(.mobile) .header .header__heading  {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

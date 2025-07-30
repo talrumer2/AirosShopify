@@ -389,5 +389,29 @@
   }, 500);
 </script>
 
+    <script>
+      // Mobile class handler - adds/removes 'mobile' class to html element based on screen width
+      function handleMobileClass() {
+        const html = document.documentElement;
+        const isMobile = window.innerWidth < 750; // Using same breakpoint as theme
+        
+        if (isMobile) {
+          html.classList.add('mobile');
+        } else {
+          html.classList.remove('mobile');
+        }
+      }
+
+      // Run on initial load
+      handleMobileClass();
+
+      // Run on window resize with debouncing for performance
+      let resizeTimeout;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(handleMobileClass, 100);
+      });
+    </script>
+
   </body>
 </html>
