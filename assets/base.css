@@ -3826,9 +3826,6 @@ html[lang="he"] {
     direction: rtl;
   }
   #CartDrawer .drawer__inner {
-    
-    width: 500px;
-    max-width: 50vw !important;
     direction: rtl;
 
     #CartDrawer-ColumnProduct {
@@ -3847,9 +3844,9 @@ html[lang="he"] {
   text-align: right;
 }
 
-/* html[lang="he"] body {
-  font-family: inherit;
-} */
+html.is-pc #CartDrawer .drawer__inner {
+  width: 500px;
+}
 
 html[lang="he"] .text-left {
   text-align: right;
@@ -3859,14 +3856,6 @@ html[lang="he"] .text-right {
   text-align: left;
 }
 
-/* html[lang="he"] .site-header__menu,
-html[lang="he"] .grid,
-html[lang="he"] .footer,
-html[lang="he"] .product__info-wrapper {
-  direction: rtl;
-  text-align: right;
-} */
-
 #Sea-Accessibility__button .Sea-Accessibility_WidgetIcon {
   right: -8px;
   bottom: -8px;
@@ -3875,13 +3864,13 @@ html[lang="he"] .product__info-wrapper {
 
 
 
-html.mobile .header .header__inline-menu {
+html.is-mobile .header .header__heading {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-html:not(.mobile) .header .header__heading  {
+html.is-pc .header .header__inline-menu {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

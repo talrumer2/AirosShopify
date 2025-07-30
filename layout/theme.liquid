@@ -390,15 +390,17 @@
 </script>
 
     <script>
-      // Mobile class handler - adds/removes 'mobile' class to html element based on screen width
+      // Mobile class handler - adds/removes 'is-mobile' & 'is-pc' class to html element based on screen width
       function handleMobileClass() {
         const html = document.documentElement;
-        const isMobile = window.innerWidth < 750; // Using same breakpoint as theme
+        const isMobile = window.innerWidth < 990; // Using same breakpoint as theme
         
         if (isMobile) {
-          html.classList.add('mobile');
+          html.classList.add('is-mobile');
+          html.classList.remove('is-pc');
         } else {
-          html.classList.remove('mobile');
+          html.classList.add('is-pc');
+          html.classList.remove('is-mobile');
         }
       }
 
