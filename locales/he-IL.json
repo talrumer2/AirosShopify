@@ -2296,7 +2296,7 @@
       "products": "מוצרים",
       "shopping_cart": "עגלת הקניות שלך",
       "account": "חשבון",
-      "create_account": "צרי חשבון",
+      "create_account": "צרי חשבון Airos",
       "reset_account": "איפוס חשבון",
       "addresses": "כתובות",
       "order": "הזמנה %{name}",
@@ -3456,7 +3456,7 @@
       "guest_continue": "להמשיך",
       "guest_title": "המשיכי כאורח",
       "password": "סיסמה",
-      "title": "כניסה למערכת",
+      "title": "כניסה לחשבון Airos",
       "sign_in": "כניסה",
       "submit": "שלח",
       "alternate_provider_separator": "או"
@@ -3502,7 +3502,7 @@
       "success": "שלחנו לך אימייל עם קישור לעדכון הסיסמה שלך."
     },
     "register": {
-      "title": "צרי חשבון",
+      "title": "יצירת חשבון Airos",
       "first_name": "שם פרטי",
       "last_name": "שם משפחה",
       "email": "אימייל",
