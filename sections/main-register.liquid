@@ -16,7 +16,7 @@
 
 <div class="customer register section-{{ section.id }}-padding">
   <h1>
-    Create Airos Account
+    {{ 'customer.login_page.create_account' | t }}
   </h1>
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}

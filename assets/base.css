@@ -127,8 +127,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .page-width--narrow {
@@ -3822,7 +3822,10 @@ form-embed [data-testid="teaser-container"] {
 /* RTL 🔥 */
 
 html[lang="he"] {
-  .drawer__header, .footer__content-top, .footer__content-bottom {
+  .drawer__header, 
+  .footer__content-top, 
+  .footer__content-bottom,
+  .customer.login {
     direction: rtl;
   }
   #CartDrawer .drawer__inner {
@@ -3869,6 +3872,8 @@ html.is-mobile .header .header__heading {
   left: 50%;
   transform: translateX(-50%);
 }
+
+html.is-pc .header .header__heading {
 
 html.is-mobile .header__heading-logo,
 html.is-mobile .header__heading-logo .tal-svg,

@@ -7,12 +7,15 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  background-color: rgba(var(--color-foreground), 0.5);
-  transition: visibility var(--duration-default) ease;
+  background-color: rgba(var(--color-foreground), 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .6s cubic-bezier(.75, 0, .175, 1), visibility .6s cubic-bezier(.75, 0, .175, 1), opacity .6s cubic-bezier(.75, 0, .175, 1);
 }
 
 .drawer.active {
   visibility: visible;
+  opacity: 1;
 }
 
 .drawer__inner {
@@ -26,7 +29,7 @@
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: transform var(--duration-default) ease;
+  transition: transform .6s cubic-bezier(.75,0,.175,1), visibility .6s cubic-bezier(.75,0,.175,1);
 }
 
 .drawer__inner-empty {
