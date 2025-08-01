@@ -179,7 +179,7 @@
         "return_shipping_fee_label": "משלוח חזרה",
         "free_shipping_discount_label": "משלוח חינם",
         "applied_free_shipping_discount_label": "יישומי",
-        "apply_discount_button_label": "לפנות",
+        "apply_discount_button_label": "הפעלה",
         "applied_discount_message": "%{amount} הנחה על מחיר ההזמנה הכולל",
         "discount_has_been_applied": "ההנחה יושמה",
         "discount_has_been_removed": "ההנחה הוסרה",
@@ -1164,7 +1164,7 @@
         "amount_left_to_pay_label": "תשלום לתשלום:",
         "discount_button_action_label": "החלת קוד הנחה",
         "gift_card_code_label": "קוד כרטיס מתנה",
-        "apply_gift_card_button_label": "לפנות",
+        "apply_gift_card_button_label": "הפעלה",
         "gift_card_balance_label": "לאזן:",
         "supported_card_brands_more_label": "ועוד…",
         "detected_card_brand": "מותג כרטיס שזוהה: {brand}",
@@ -2239,7 +2239,7 @@
         "split_shipping_option_fastest": "המהיר ביותר",
         "split_shipping_option_recommended": "מומלץ",
         "split_shipping_option_custom": "מנהג",
-        "delivery_title": "מסירה",
+        "delivery_title": "משלוח",
         "shipping_method_one_time_purchase_group_title": "רכישה חד פעמית",
         "shipping_method_first_shipment_group_title": {
           "one": "משלוח ראשון",
@@ -3507,7 +3507,7 @@
         "filter": {
           "clear_section": "נקה את הקטע",
           "clear_all": "נקה הכל",
-          "apply": "לפנות",
+          "apply": "הפעלה",
           "date": {
             "start_date": "תאריך התחלה",
             "end_date": "תאריך סיום",
@@ -4220,7 +4220,7 @@
       "duties_included": "כולל חובות."
     },
     "facets": {
-      "apply": "לפנות",
+      "apply": "הפעלה",
       "clear": "ברור",
       "from": "מן",
       "filter_by_label": "לסנן:",

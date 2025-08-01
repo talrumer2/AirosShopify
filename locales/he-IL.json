@@ -10,6 +10,9 @@
 {
   "shopify": {
     "checkout": {
+      "marketing": {
+        "accept_marketing_checkbox_label": "אשמח לקבל מיילים עם הצעות ומבצעים"
+      },
       "stock": {
         "unfulfillable_product": {
           "default_message": {
@@ -179,7 +182,7 @@
         "return_shipping_fee_label": "משלוח חזרה",
         "free_shipping_discount_label": "משלוח חינם",
         "applied_free_shipping_discount_label": "יישומי",
-        "apply_discount_button_label": "לפנות",
+        "apply_discount_button_label": "הפעלה",
         "applied_discount_message": "%{amount} הנחה על מחיר ההזמנה הכולל",
         "discount_has_been_applied": "ההנחה יושמה",
         "discount_has_been_removed": "ההנחה הוסרה",
@@ -219,7 +222,7 @@
         "taxes_label": "מיסים",
         "estimated_taxes_label": "מיסים משוערים",
         "information_estimated_taxes_label": "מיסים (משוערים)",
-        "estimated_taxes_finalization_tooltip_content": "המס הסופי והסכום הכולל יאושרו באמצעות דוא\"ל או הודעת טקסט לאחר ביצוע ההזמנה.",
+        "estimated_taxes_finalization_tooltip_content": "המס הסופי והסכום הכולל יאושרו באמצעות אימייל או הודעת טקסט לאחר ביצוע ההזמנה.",
         "order_total_label": "סה\"כ הזמנה",
         "price_before_discount_aria_text": "מחיר מקורי",
         "price_after_discount_aria_text": "מחיר מוזל",
@@ -477,7 +480,7 @@
         "non_shippable_title": "ההזמנה שלך הושלמה",
         "let_us_know": "תודיעו לנו",
         "login_title": "התחבר כדי לצפות בכל פרטי ההזמנה",
-        "login_description": "ניתן למצוא את מספר ההזמנה שלך בקבלה שקיבלת בדוא\"ל.",
+        "login_description": "ניתן למצוא את מספר ההזמנה שלך בקבלה שקיבלת באימייל.",
         "login_description_phone": "ניתן למצוא את מספר ההזמנה שלך בקבלה שקיבלת בהודעת טקסט.",
         "login_not_customer_html": "לא %{name}? את יכולה %{link}",
         "login_reorder_link_text": {
@@ -488,7 +491,7 @@
         "cancelled_title": "ההזמנה שלך בוטלה",
         "cancelled_description": "ההזמנה שלך בוטלה בתאריך %{date}. צרי קשר אם יש לך שאלות.",
         "order_number_label": "מספר הזמנה",
-        "customer_validation_error": "הזיני כתובת דוא\"ל או מספר הזמנה תקינים.",
+        "customer_validation_error": "הזיני כתובת אימייל או מספר הזמנה תקינים.",
         "customer_validation_error_phone": "הזיני מספר טלפון או מספר הזמנה תקין.",
         "login": "התחברות",
         "unfulfilled_items_title": "מתכוננים למשלוח",
@@ -510,7 +513,7 @@
         },
         "order_updates_description_missing": "אינך מקבלת עדכוני משלוח.",
         "order_updates_subscribe_to_email_notifications": "קבלי עדכוני משלוח במייל",
-        "order_updates_subscribe_to_email_or_phone_notifications": "קבלי עדכוני משלוח בדוא\"ל או בהודעת טקסט",
+        "order_updates_subscribe_to_email_or_phone_notifications": "קבלי עדכוני משלוח באימייל או בהודעת טקסט",
         "order_updates_subscribe_to_phone_notifications": "קבלי עדכוני משלוח באמצעות הודעת טקסט",
         "order_updates_submit_subscription": "שלח",
         "track_shipment": "מעקב אחר משלוח",
@@ -543,7 +546,7 @@
         "company_location_section_title": "חברה ומיקום",
         "thank_you_ready_for_picked_up": "ההזמנה שלך נאספה בכתובת %{address}.",
         "ready_for_delivery": "מוכנה למשלוח",
-        "order_updates_subscribe_to_email_notifications_failed": "איננו יכולים לשמור כתובת דוא\"ל זו לצורך עדכונים. אנא נסי שוב או השתמשי בכתובת דוא\"ל אחרת.",
+        "order_updates_subscribe_to_email_notifications_failed": "איננו יכולים לשמור כתובת אימייל זו לצורך עדכונים. אנא נסי שוב או השתמשי בכתובת אימייל אחרת.",
         "order_updates_subscribe_to_email_notifications_email_already_exists": "האימייל שהזנת כבר קיים.",
         "subscriptions_management": {
           "title": "מנוי",
@@ -656,9 +659,9 @@
         "order_status_confirmed_order_local": "אנחנו מכינים את ההזמנה שלך למשלוח.",
         "order_status_confirmed_order_local_pick_up": "אנחנו מכינים את ההזמנה שלך.",
         "order_status_confirmed_order_local_payment": "אנחנו מכינים את ההזמנה שלך.",
-        "order_status_updates_with_email": "תקבלו עדכונים בנוגע למשלוח ובמסירה בדוא\"ל.",
+        "order_status_updates_with_email": "תקבלו עדכונים בנוגע למשלוח ובמסירה באימייל.",
         "order_status_updates_with_phone": "ייתכן שתקבלו עדכונים בנוגע למשלוח ומסירה באמצעות הודעת טקסט.",
-        "order_status_updates_with_email_and_phone": "תקבלו עדכונים בנוגע למשלוח ובמסירה בדוא\"ל.",
+        "order_status_updates_with_email_and_phone": "תקבלו עדכונים בנוגע למשלוח ובמסירה באימייל.",
         "order_status_updates_with_missing": "בחרו כיצד תרצו לקבל עדכוני משלוח.",
         "order_status_confirmed_with_installments_payment_return": "אנא החזר את תשומת לבך לנציג המכירות.",
         "order_status_confirmed_with_installments_payment_confirm": "בקרוב תקבלו אימייל אישור עם מספר ההזמנה שלכם ופרטים על לוח התשלומים שלכם.",
@@ -754,7 +757,7 @@
             "shipping_address": "הזיני כתובת משלוח תקפה",
             "billing_address": "הזיני כתובת חיוב חוקית",
             "shipping_option": "בחרי אפשרות משלוח תקפה",
-            "email": "הזיני כתובת דוא\"ל חוקית",
+            "email": "הזיני כתובת אימייל חוקית",
             "zone": "הזיני מדינה/מדינה תקפים",
             "billing_zone": "הזיני כתובת חיוב חוקית במדינה/מדינה",
             "emirate": "הזיני אמירויות תקפות",
@@ -854,7 +857,7 @@
           "UnhandledViolations": "פרטי הזמנה"
         },
         "all_violations_content": "התקשרו אלינו או שלחו לנו {{emailLink}} כדי לעדכן פרטים זה ולהשלים את הזמנתכם:",
-        "all_violations_email_link": "דוא\"ל",
+        "all_violations_email_link": "אימייל",
         "editable_shipping_address_violations_message_title": "הוסיפי פרטים זה כדי להשלים את ההזמנה שלך:",
         "editable_shipping_address_violations_message_footer": "כדי לעדכן לצמיתות את הכתובת עבור מיקום זה, {{emailLink}} .",
         "editable_shipping_address_violations_email_link": "צרו קשר",
@@ -1036,7 +1039,7 @@
         "physical_gift_card_invalid_quantity": "פריטי שורה של כרטיסי מתנה פיזיים חייבים להיות בעלי כמות התואמת למספר קודי כרטיסי המתנה.",
         "physical_gift_card_duplicate_code": "פריט השורה של כרטיס המתנה הפיזי מכיל קוד כפול.",
         "physical_gift_card_invalid_code": "קוד כרטיס המתנה הפיזי אינו תקין.",
-        "email_blank": "הזיני כתובת דוא\"ל",
+        "email_blank": "הזיני כתובת אימייל",
         "phone_blank": "הזיני מספר טלפון",
         "address_country_invalid": "בחרי מדינה מהרשימה",
         "address_zip_invalid": "הזיני מיקוד תקף",
@@ -1105,7 +1108,7 @@
         "amount_left_to_pay_label": "תשלום לתשלום:",
         "discount_button_action_label": "החלת קוד הנחה",
         "gift_card_code_label": "קוד כרטיס מתנה",
-        "apply_gift_card_button_label": "לפנות",
+        "apply_gift_card_button_label": "הפעלה",
         "gift_card_balance_label": "לאזן:",
         "supported_card_brands_more_label": "ועוד…",
         "detected_card_brand": "מותג כרטיס שזוהה: {brand}",
@@ -1411,7 +1414,7 @@
             "lost_access_to_company": "הלקוח איבד גישה לכל חברה.",
             "contact_info_does_not_match_customer_account": "פרטי הלקוח שצוינו צריכים להתאים לחשבון הלקוח המחובר.",
             "phone_number_does_not_match_expected_pattern": "מספר הטלפון שצוין אינו תואם את התבנית הצפויה.",
-            "email_required": "נדרשת כתובת דוא\"ל בעת רכישת הסחורה באמצעות מנוי.",
+            "email_required": "נדרשת כתובת אימייל בעת רכישת הסחורה באמצעות מנוי.",
             "email_domain_is_invalid": "לא ניתן לפענח את הדומיין שצוין.",
             "missing_contact_method": "חסרה שיטת יצירת קשר תקפה.",
             "checkout_completion_target_is_missing": "יעד השלמת התשלום חסר.",
@@ -1684,23 +1687,23 @@
         "shipping_used_as_billing_notice": "כתובת זו תשמש גם ככתובת החיוב שלך עבור הזמנה זו.",
         "delivery_option_title": "שיטת משלוח",
         "contact_method_title": "פרטים ליצירת קשר",
-        "email_label": "דוא\"ל",
-        "email_placeholder": "דוא\"ל",
-        "email_or_phone_label": "דוא\"ל או מספר טלפון נייד",
-        "email_or_phone_placeholder": "דוא\"ל או מספר טלפון נייד",
+        "email_label": "אימייל",
+        "email_placeholder": "אימייל",
+        "email_or_phone_label": "אימייל",
+        "email_or_phone_placeholder": "אימייל",
         "stored_addresses_label": "כתובות שנשמרו",
         "available_addresses_label": "כתובות זמינות",
         "new_address_label": "השתמשי בכתובת חדשה",
         "first_name_label": "שם פרטי",
-        "optional_first_name_label": "שם פרטי (אופציונלי)",
+        "optional_first_name_label": "שם פרטי",
         "last_name_label": "שם משפחה",
         "company_label": "חברה",
         "company_attention_label": "חברה/תשומת לב",
         "optional_company_attention_label": "חברה/תשומת לב (אופציונלי)",
         "optional_company_label": "חברה (אופציונלי)",
-        "address1_label": "כתובת",
-        "address2_label": "דירה, סוויטה וכו'.",
-        "optional_address2_label": "דירה, סוויטה וכו' (אופציונלי)",
+        "address1_label": "רחוב ומספר בית",
+        "address2_label": "דירה, תיבת דואר'.",
+        "optional_address2_label": "דירה, תיבת דואר' (אופציונלי)",
         "city_label": "עיר",
         "country_label": "מדינה",
         "country_code": "קוד מדינה",
@@ -1721,9 +1724,9 @@
         "emirate_placeholder": "אמירות",
         "state_and_territory_label": "מדינה/טריטוריה",
         "state_and_territory_placeholder": "מדינה/טריטוריה",
-        "phone_label": "טלפון",
-        "optional_phone_label": "טלפון (אופציונלי)",
-        "phone_placeholder": "טלפון",
+        "phone_label": "טלפון נייד",
+        "optional_phone_label": "טלפון נייד (אופציונלי)",
+        "phone_placeholder": "טלפון נייד",
         "phone_tooltip": "במקרה שנצטרך ליצור איתך קשר בנוגע להזמנה שלך",
         "zip_code_label": "מיקוד",
         "optional_zip_code_label": "מיקוד (אופציונלי)",
@@ -1985,7 +1988,7 @@
       "more": "יותר"
     },
     "attributes": {
-      "email": "דוא\"ל",
+      "email": "אימייל",
       "password": "סיסמה",
       "password_confirmation": "אישור הסיסמה",
       "first_name": "שם פרטי",
@@ -2025,7 +2028,7 @@
       "blocked_address": "מיקום זה אינו נתמך",
       "credit_card_session_expired": "פג תוקף האישור לכרטיס האשראי, אנא הזיני שוב את פרטי התשלום שלך. הכרטיס שלך לא חויב.",
       "empty": "לא יכול להיות ריק",
-      "invalid_email": "חייבת להיות כתובת דוא\"ל תקפה",
+      "invalid_email": "חייבת להיות כתובת אימייל תקפה",
       "discount_disabled": "הנחה זו הושבתה",
       "discount_expired": "הנחה זו אינה תקפה יותר",
       "discount_limit_reached": "הנחה זו הגיעה למגבלת השימוש שלה",
@@ -2060,11 +2063,11 @@
       "expired": "פג תוקף",
       "invalid_start_date_or_issue_number_for_debit": "נדרשת תאריך התחלה או מספר הנפקה תקפים",
       "invalid_expiry_year": "אינו שנת תפוגה תקפה",
-      "reset_password_html": "כתובת דוא\"ל זו כבר משויכת לחשבון. אם חשבון זה שלך, תוכלי <a href=\"/account/login#recover\">לאפס את הסיסמה שלך.</a>",
+      "reset_password_html": "כתובת אימייל זו כבר משויכת לחשבון. אם חשבון זה שלך, תוכלי <a href=\"/account/login#recover\">לאפס את הסיסמה שלך.</a>",
       "verify_email": "שלחנו אימייל אל %{customer_email}, אנא לחצי על הקישור המצורף כדי לאמת את כתובת האימייל שלך.",
       "product_not_available": "המוצר לא פורסם עבור לקוח זה.",
       "shop_404": {
-        "title": "צרי אתר מסחר דוא\"ל ומכור באינטרנט! תוכנת מסחר דוא\"ל מבית Shopify",
+        "title": "צרי אתר מסחר אימייל ומכור באינטרנט! תוכנת מסחר אימייל מבית Shopify",
         "heros": {
           "store_unavailable": "מצטערים, חנות זו אינה זמינה כרגע.",
           "store_not_exist": "החנות הזו לא קיימת.",
@@ -2116,7 +2119,7 @@
         "subscribe_error": "שגיאת הרשמה",
         "unsubscribe_error": "שגיאת ביטול מנוי",
         "no_account_found": "לא נמצא חשבון עם כתובת האימייל הזו.",
-        "invalid_credentials": "כתובת דוא\"ל או סיסמה שגויים.",
+        "invalid_credentials": "כתובת אימייל או סיסמה שגויים.",
         "denylisted_reset_password": "לא ניתן היה לגשת לחשבונך מכיוון שהסיסמה הנוכחית אינה מאובטחת. תקבלי אימייל לעדכון הסיסמה.",
         "signup_disabled": "יצירת חשבון לקוח הושבתה."
       },
@@ -2242,15 +2245,15 @@
       },
       "open_tracking": {
         "opt_in": {
-          "opted_in_html": "<b>בחרתם במעקב אחר פתיחת דוא\"ל.</b>",
+          "opted_in_html": "<b>בחרתם במעקב אחר פתיחת אימייל.</b>",
           "visibility": "שיעורי פתיחת אימיילים ידווחו באופן אנונימי. נראה רק אם פתחת אימייל כחלק משיעור פתיחת אימייל מצטבר.",
-          "opt_out_html": "באפשרותך <a style=\"text-decoration:underline;\" href=\"%{link}\">לבטל</a> את מעקב פתיחת הדוא\"ל אם אינך מעוניינת לשתף פרטים זה.",
-          "preview_bar": "אתם מציגים בתצוגה מקדימה מה לקוחות יראו כשהם יבחרו במעקב אחר פתיחת דוא\"ל."
+          "opt_out_html": "באפשרותך <a style=\"text-decoration:underline;\" href=\"%{link}\">לבטל</a> את מעקב פתיחת האימייל אם אינך מעוניינת לשתף פרטים זה.",
+          "preview_bar": "אתם מציגים בתצוגה מקדימה מה לקוחות יראו כשהם יבחרו במעקב אחר פתיחת אימייל."
         },
         "opt_out": {
           "opted_out_html": "<b>ביטלת את הסכמתך למעקב אחר פתיחת אימיילים.</b>",
           "visibility": "לא נראה אם פתחת את האימיילים שלנו.",
-          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">הצטרף</a> למעקב אחר פתיחת דוא\"ל.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">הצטרף</a> למעקב אחר פתיחת אימייל.",
           "preview_bar": "אתם מציגים בתצוגה מקדימה מה לקוחות יראו כשהם מבטלים את הסכמתם למעקב אחר פתיחת אימייל."
         },
         "no_longer_track": {
@@ -2434,8 +2437,8 @@
       "refunded_amount": "החזר כספי",
       "request_return_failed": "הייתה בעיה בעיבוד הבקשה שלך. אנא נסי שוב.",
       "login_card": {
-        "resend_link_and_login": "כדי לצפות בפרטי ההזמנה שלך, התחבר או שלח קישור חדש לכתובת הדוא\"ל או למספר הטלפון שבהם השתמשת בעת ביצוע הרכישה.",
-        "resend_link_only": "כדי לצפות בפרטי ההזמנה שלך, שלח קישור חדש לכתובת הדוא\"ל או למספר הטלפון שבהם השתמשת בעת ביצוע הרכישה.",
+        "resend_link_and_login": "כדי לצפות בפרטי ההזמנה שלך, התחבר או שלח קישור חדש לכתובת האימייל או למספר הטלפון שבהם השתמשת בעת ביצוע הרכישה.",
+        "resend_link_only": "כדי לצפות בפרטי ההזמנה שלך, שלח קישור חדש לכתובת האימייל או למספר הטלפון שבהם השתמשת בעת ביצוע הרכישה.",
         "log_in": "התחברות",
         "resend_link": "שלח קישור חדש",
         "link_expired": "פג תוקף הקישור"
@@ -2444,7 +2447,7 @@
       "marketing_section_title": "חדשות והצעות",
       "marketing_description": "תקבלו מיילים שיווקיים. תוכלו לבטל את המנוי בכל עת.",
       "marketing_checkbox_label": "שלח לי אימייל עם חדשות והצעות",
-      "marketing_checkmark_label": "הנך רשום/ה לקבלת חדשות והצעות בדוא\"ל",
+      "marketing_checkmark_label": "הנך רשום/ה לקבלת חדשות והצעות באימייל",
       "returns": {
         "expand_events_label": "הצג פרטים",
         "hide_events_label": "הסתר פרטים",
@@ -2865,7 +2868,7 @@
         "filter": {
           "clear_section": "נקה את הקטע",
           "clear_all": "נקה הכל",
-          "apply": "לפנות",
+          "apply": "הפעלה",
           "date": {
             "start_date": "תאריך התחלה",
             "end_date": "תאריך סיום",
@@ -3137,7 +3140,7 @@
         "email_help_text": "לא ניתן לשנות את כתובת האימייל המשמשת להתחברות",
         "first_name": "שם פרטי",
         "last_name": "שם משפחה",
-        "email": "דוא\"ל",
+        "email": "אימייל",
         "no_name_provided_accessibility_label": "לא נוסף שם",
         "phone_number_help_text": "לא ניתן לשנות את מספר הטלפון ששימש להתחברות",
         "save": "להציל",
@@ -3145,7 +3148,7 @@
         "title": "פרופיל"
       },
       "verify_new_email_modal": {
-        "title": "אימות כתובת דוא\"ל",
+        "title": "אימות כתובת אימייל",
         "description": "הזיני את הקוד שנשלח אל {{email}}",
         "one_time_password_label": "קוד בן 6 ספרות",
         "email_resend_button": "שלח שוב את הקוד",
@@ -3156,7 +3159,7 @@
         "cancel_button_accessibility_label": "ביטול עריכת אימייל"
       },
       "email_update_success_modal": {
-        "title": "אימות כתובת דוא\"ל",
+        "title": "אימות כתובת אימייל",
         "description": "האימייל עודכן בהצלחה. מפנה מחדש להתחברות."
       },
       "profile_update_confirmation_message": "הפרופיל עודכן",
@@ -3228,7 +3231,7 @@
     }
   },
   "newsletter": {
-    "label": "דוא\"ל",
+    "label": "אימייל",
     "success": "תודה על ההרשמה",
     "button_label": "הירשם"
   },
@@ -3261,7 +3264,7 @@
       "moderated": "שימו לב, יש לאשר תגובות לפני פרסומן.",
       "comment_form_title": "השאר תגובה",
       "name": "שם",
-      "email": "דוא\"ל",
+      "email": "אימייל",
       "message": "הערה",
       "post": "פרסם תגובה",
       "back_to_blog": "חזרה לבלוג",
@@ -3448,7 +3451,7 @@
     "login_page": {
       "cancel": "לבטל",
       "create_account": "צרי חשבון Airos",
-      "email": "דוא\"ל",
+      "email": "אימייל",
       "forgot_password": "שכחת את הסיסמה שלך?",
       "guest_continue": "להמשיך",
       "guest_title": "המשיכי כאורח",
@@ -3502,7 +3505,7 @@
       "title": "צרי חשבון",
       "first_name": "שם פרטי",
       "last_name": "שם משפחה",
-      "email": "דוא\"ל",
+      "email": "אימייל",
       "password": "סיסמה",
       "submit": "ליצור"
     },
@@ -3534,9 +3537,9 @@
       "checkbox": "אני רוצה לשלוח את זה כמתנה",
       "expanded": "טופס מקבל כרטיס מתנה מורחב",
       "collapsed": "טופס מקבל כרטיס מתנה מכוסה",
-      "email_label": "דוא\"ל הנמען",
-      "email_label_optional_for_no_js_behavior": "כתובת דוא\"ל של הנמען (אופציונלי)",
-      "email": "דוא\"ל",
+      "email_label": "אימייל הנמען",
+      "email_label_optional_for_no_js_behavior": "כתובת אימייל של הנמען (אופציונלי)",
+      "email": "אימייל",
       "name_label": "שם הנמען (אופציונלי)",
       "name": "שם",
       "message_label": "הודעה (אופציונלי)",

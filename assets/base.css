@@ -3821,6 +3821,20 @@ form-embed [data-testid="teaser-container"] {
 
 /* RTL 🔥 */
 
+html[lang="he"] input,
+html[lang="he"] textarea,
+html[lang="he"] select,
+html[lang="he"] label {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+html[lang="he"] label {
+  left: auto;
+  right: 1.5rem; /* Adjust as needed */
+  text-align: right;
+}
+
 html[lang="he"] {
   .drawer__header, 
   .footer__content-top, 
